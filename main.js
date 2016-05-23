@@ -5489,7 +5489,7 @@ Game.Launch=function()
 		};
 		
 		
-		new Game.Object('Farm','ferme|fermes|récolté(s)','Fait pousser des plants de cookies grace à des graines de cookie.','farmIcon',2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
+		new Game.Object('Farm','ferme|fermes|récoltés','Fait pousser des plants de cookies grace à des graines de cookie.','farmIcon',2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères fermières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5499,7 +5499,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères fermières');
 		});
 		
-		new Game.Object('Mine','mine|mines|miné(s)','Mine de la pâte à cookie et des chips de chocolats.','mineIcon',3,{base:'mine',xV:16,yV:16,w:64,rows:2,x:0,y:24},10000,function(me){
+		new Game.Object('Mine','mine|mines|minés','Mine de la pâte à cookie et des chips de chocolats.','mineIcon',3,{base:'mine',xV:16,yV:16,w:64,rows:2,x:0,y:24},10000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères minières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5509,7 +5509,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères minières');
 		});
 		
-		new Game.Object('Factory','factory|factories|mass-produced','Produces large quantities of cookies.','factoryIcon',4,{base:'factory',xV:8,yV:0,w:64,rows:1,x:0,y:-22},3000,function(me){
+		new Game.Object('Factory','usine|usines|produits en masse','Produit de grandes quantités de cookies.','factoryIcon',4,{base:'factory',xV:8,yV:0,w:64,rows:1,x:0,y:-22},3000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères ouvrières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5519,7 +5519,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères ouvrières');
 		});
 		
-		new Game.Object('Bank','bank|banks|banked','Generates cookies from interest.','bankIcon',15,{base:'bank',xV:8,yV:4,w:56,rows:1,x:0,y:13},0,function(me){
+		new Game.Object('Bank','banque|banques|mis en banque','Génère des cookies par intérêt.','bankIcon',15,{base:'bank',xV:8,yV:4,w:56,rows:1,x:0,y:13},0,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères banquières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5529,7 +5529,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères banquières');
 		});
 		
-		new Game.Object('Temple','temple|temples|discovered','Full of precious, ancient chocolate.','templeIcon',16,{base:'temple',xV:8,yV:4,w:72,rows:2,x:0,y:-5},0,function(me){
+		new Game.Object('Temple','temple|temples|découverts','Remplis de précieux et d\'ancien chocolat.','templeIcon',16,{base:'temple',xV:8,yV:4,w:72,rows:2,x:0,y:-5},0,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères prêtresses')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5539,7 +5539,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères prêtresses');
 		});
 		
-		new Game.Object('Wizard tower','wizard tower|wizard towers|summoned','Summons cookies with magic spells.','wizardtowerIcon',17,{base:'wizardtower',xV:16,yV:16,w:48,rows:2,x:0,y:20},0,function(me){
+		new Game.Object('Wizard tower','tour de sorcier|tours de sorciers|invoqués','Invoque des cookies avec des sorts.','wizardtowerIcon',17,{base:'wizardtower',xV:16,yV:16,w:48,rows:2,x:0,y:20},0,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères sorcières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5549,7 +5549,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères sorcières');
 		});
 		
-		new Game.Object('Shipment','shipment|shipments|shipped','Brings in fresh cookies from the cookie planet.','shipmentIcon',5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
+		new Game.Object('Shipment','expédition|expéditions|ramenés','Rapport des cookies de la planète cookie.','shipmentIcon',5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères cosmiques')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5559,7 +5559,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères cosmiques');
 		});
 		
-		new Game.Object('Alchemy lab','alchemy lab|alchemy labs|transmuted','Turns gold into cookies!','alchemylabIcon',6,{base:'alchemylab',xV:16,yV:16,w:64,rows:2,x:0,y:16},200000,function(me){
+		new Game.Object('Alchemy lab','labo d\'alchimie|labos d\'alchimie|transmutés','Transforme l\'or en cookie !','alchemylabIcon',6,{base:'alchemylab',xV:16,yV:16,w:64,rows:2,x:0,y:16},200000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères transmutées')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5569,7 +5569,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères transmutées');
 		});
 		
-		new Game.Object('Portal','portal|portals|retrieved','Opens a door to the Cookieverse.','portalIcon',7,{base:'portal',xV:32,yV:32,w:64,rows:2,x:0,y:0},1666666,function(me){
+		new Game.Object('Portal','portail|portails|récupérés','Ouvre une porte dimentionnelle vers Cookieverse.','portalIcon',7,{base:'portal',xV:32,yV:32,w:64,rows:2,x:0,y:0},1666666,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères alterées')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5579,7 +5579,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères alterées');
 		});
 		
-		new Game.Object('Time machine','time machine|time machines|recovered','Brings cookies from the past, before they were even eaten.','timemachineIcon',8,{base:'timemachine',xV:32,yV:32,w:64,rows:1,x:0,y:0},123456789,function(me){
+		new Game.Object('Time machine','machine à remonter le temps|machines à remonter le temps|retrouvés','Retrouve les cookies perdus dans le passés avant qu\'ils ne soient mangés.','timemachineIcon',8,{base:'timemachine',xV:32,yV:32,w:64,rows:1,x:0,y:0},123456789,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères de grand-mères')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5589,7 +5589,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères de grand-mères');
 		});
 		
-		new Game.Object('Antimatter condenser','antimatter condenser|antimatter condensers|condensed','Condenses the antimatter in the universe into cookies.','antimattercondenserIcon',13,{base:'antimattercondenser',xV:0,yV:64,w:64,rows:1,x:0,y:0},3999999999,function(me){
+		new Game.Object('Antimatter condenser','condenseurs d\'antimatières|condenseurs d\'antimatières|condensés','Condense l\'antimatière de l\'univers en cookie.','antimattercondenserIcon',13,{base:'antimattercondenser',xV:0,yV:64,w:64,rows:1,x:0,y:0},3999999999,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Anti-grand-mères')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -5600,7 +5600,7 @@ Game.Launch=function()
 		});
 		Game.last.displayName='<span style="font-size:65%;position:relative;bottom:4px;">Antimatter condenser</span>';//shrink the name since it's so large
 		
-		new Game.Object('Prism','prism|prisms|converted','Converts light itself into cookies.','prismIcon',14,{base:'prism',xV:16,yV:4,w:64,rows:1,x:0,y:20},75000000000,function(me){
+		new Game.Object('Prism','prisme|prismes|convertis','Converti la lumière elle-même en cookies.','prismIcon',14,{base:'prism',xV:16,yV:4,w:64,rows:1,x:0,y:20},75000000000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Grand-mères arc-en-ciel')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
