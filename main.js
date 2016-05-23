@@ -717,7 +717,7 @@ Game.Launch=function()
 	'<div class="listing">&bull; golden cookies only have 20% chance of giving the same outcome twice in a row now</div>'+
 	'<div class="listing">&bull; added a golden cookie upgrade</div>'+
 	'<div class="listing">&bull; added an upgrade that makes pledges last twice as long (requires having pledged 10 times)</div>'+
-	'<div class="listing">&bull; Quintillion fingers is now twice as efficient</div>'+
+	'<div class="listing">&bull; Un quadrillion de doigts is now twice as efficient</div>'+
 	'<div class="listing">&bull; Uncanny clicker was really too unpredictable; it is now a regular achievement and no longer requires a world record, just *pretty fast* clicking</div>'+
 	
 	'</div><div class="subsection update small">'+
@@ -1055,7 +1055,7 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.RandomBakeryName=function()
 		{
-			return (Math.random()>0.05?(choose(['Magic','Fantastic','Fancy','Sassy','Snazzy','Pretty','Cute','Pirate','Ninja','Zombie','Robot','Radical','Urban','Cool','Hella','Sweet','Awful','Double','Triple','Turbo','Techno','Disco','Electro','Dancing','Wonder','Mutant','Space','Science','Medieval','Future','Captain','Bearded','Lovely','Tiny','Big','Fire','Water','Frozen','Metal','Plastic','Solid','Liquid','Moldy','Shiny','Happy','Happy Little','Slimy','Tasty','Delicious','Hungry','Greedy','Lethal','Professor','Doctor','Power','Chocolate','Crumbly','Choklit','Righteous','Glorious','Mnemonic','Psychic','Frenetic','Hectic','Crazy','Royal','El','Von'])+' '):'Mc')+choose(['Cookie','Biscuit','Muffin','Scone','Cupcake','Pancake','Chip','Sprocket','Gizmo','Puppet','Mitten','Sock','Teapot','Mystery','Baker','Cook','Grand-mère','Click','Clicker','Spaceship','Factory','Portal','Machine','Experiment','Monster','Panic','Burglar','Bandit','Booty','Potato','Pizza','Burger','Sausage','Meatball','Spaghetti','Macaroni','Kitten','Puppy','Giraffe','Zebra','Parrot','Dolphin','Duckling','Sloth','Turtle','Goblin','Pixie','Gnome','Computer','Pirate','Ninja','Zombie','Robot']);
+			return (Math.random()>0.05?(choose(['Magic','Fantastic','Fancy','Sassy','Snazzy','Pretty','Cute','Pirate','Ninja','Zombie','Robot','Radical','Urban','Cool','Hella','Sweet','Awful','Double','Triple','Turbo','Techno','Disco','Electro','Dancing','Wonder','Mutant','Space','Science','Medieval','Future','Captain','Bearded','Lovely','Tiny','Big','Fire','Water','Frozen','Metal','Plastic','Solid','Liquid','Moldy','Shiny','Happy','Happy Little','Slimy','Tasty','Delicious','Hungry','Greedy','Lethal','Professor','Doctor','Power','Chocolate','Crumbly','Choklit','Righteous','Glorious','Mnemonic','Psychic','Frenetic','Hectic','Crazy','Royal','El','Von'])+' '):'Mc')+choose(['Cookie','Biscuit','Muffin','Scone','Cupcake','Pancake','Chip','Sprocket','Gizmo','Puppet','Mitten','Sock','Teapot','Mystery','Baker','Cook','grandma','Click','Clicker','Spaceship','Factory','Portal','Machine','Experiment','Monster','Panic','Burglar','Bandit','Booty','Potato','Pizza','Burger','Sausage','Meatball','Spaghetti','Macaroni','Kitten','Puppy','Giraffe','Zebra','Parrot','Dolphin','Duckling','Sloth','Turtle','Goblin','Pixie','Gnome','Computer','Pirate','Ninja','Zombie','Robot']);
 		}
 		Game.GetBakeryName=function() {return Game.RandomBakeryName();}
 		Game.bakeryName=Game.GetBakeryName();
@@ -1676,7 +1676,7 @@ Game.Launch=function()
 						if (Game.ascensionMode!=1)
 						{
 							if (Game.Has('Starter kit')) Game.Objects['Cursor'].free=10;
-							if (Game.Has('Starter kitchen')) Game.Objects['Grand-mère'].free=5;
+							if (Game.Has('Starter kitchen')) Game.Objects['Grandma'].free=5;
 						}
 						
 						Game.CalculateGains();
@@ -1870,7 +1870,7 @@ Game.Launch=function()
 					if (Game.Has('Season switcher')) {for (var i in Game.seasons) {Game.Unlock(Game.seasons[i].trigger);}}
 					
 					if (Game.Has('Starter kit')) Game.Objects['Cursor'].getFree(10);
-					if (Game.Has('Starter kitchen')) Game.Objects['Grand-mère'].getFree(5);
+					if (Game.Has('Starter kitchen')) Game.Objects['Grandmas'].getFree(5);
 				}
 			}
 			
@@ -2700,15 +2700,15 @@ Game.Launch=function()
 		Game.mouseCps=function()
 		{
 			var add=0;
-			if (Game.Has('Thousand fingers')) add+=		0.1;
-			if (Game.Has('Million fingers')) add+=		0.5;
-			if (Game.Has('Billion fingers')) add+=		5;
-			if (Game.Has('Trillion fingers')) add+=		50;
-			if (Game.Has('Quadrillion fingers')) add+=	500;
-			if (Game.Has('Quintillion fingers')) add+=	5000;
-			if (Game.Has('Sextillion fingers')) add+=	50000;
-			if (Game.Has('Septillion fingers')) add+=	500000;
-			if (Game.Has('Octillion fingers')) add+=	5000000;
+			if (Game.Has('Un millier de doigts')) add+=		0.1;
+			if (Game.Has('Un million de doigts')) add+=		0.5;
+			if (Game.Has('Un milliard de doigts')) add+=		5;
+			if (Game.Has('Un billion de doigts')) add+=		50;
+			if (Game.Has('Un trillion de doigts')) add+=	500;
+			if (Game.Has('Un quadrillion de doigts')) add+=	5000;
+			if (Game.Has('Un quintillion de doigts')) add+=	50000;
+			if (Game.Has('Un sextillion de doigts')) add+=	500000;
+			if (Game.Has('Un septillion de doigts')) add+=	5000000;
 			var num=0;
 			for (var i in Game.Objects) {num+=Game.Objects[i].amount;}
 			num-=Game.Objects['Cursor'].amount;
@@ -5391,39 +5391,39 @@ Game.Launch=function()
 		}
 		
 		//define objects
-		new Game.Object('Cursor','cursor|cursors|clicked','Autoclicks once every 10 seconds.','cursoricon',0,{},15,function(){
+		new Game.Object('Cursor','curseur|curseurs|cliqué(s)','Clique automatiquement toute les 10 secondes.','cursoricon',0,{},15,function(){
 			var add=0;
-			if (Game.Has('Thousand fingers')) add+=		0.1;
-			if (Game.Has('Million fingers')) add+=		0.5;
-			if (Game.Has('Billion fingers')) add+=		5;
-			if (Game.Has('Trillion fingers')) add+=		50;
-			if (Game.Has('Quadrillion fingers')) add+=	500;
-			if (Game.Has('Quintillion fingers')) add+=	5000;
-			if (Game.Has('Sextillion fingers')) add+=	50000;
-			if (Game.Has('Septillion fingers')) add+=	500000;
-			if (Game.Has('Octillion fingers')) add+=	5000000;
+			if (Game.Has('Un millier de doigts')) add+=		0.1;
+			if (Game.Has('Un million de doigts')) add+=		0.5;
+			if (Game.Has('Un milliard de doigts')) add+=		5;
+			if (Game.Has('Un billion de doigts')) add+=		50;
+			if (Game.Has('Un trillion de doigts')) add+=	500;
+			if (Game.Has('Un quadrillion de doigts')) add+=	5000;
+			if (Game.Has('Un quintillion de doigts')) add+=	50000;
+			if (Game.Has('Un sextillion de doigts')) add+=	500000;
+			if (Game.Has('Un septillion de doigts')) add+=	5000000;
 			var num=0;
 			for (var i in Game.Objects) {if (Game.Objects[i].name!='Cursor') num+=Game.Objects[i].amount;}
 			add=add*num;
-			return Game.ComputeCps(0.1,Game.Has('Reinforced index finger')+Game.Has('Carpal tunnel prevention cream')+Game.Has('Ambidextrous'),add);
+			return Game.ComputeCps(0.1,Game.Has('Index renforcé')+Game.Has('Carpal tunnel prevention cream')+Game.Has('Ambidextrous'),add);
 		},function(){
 			if (this.amount>=1) Game.Unlock(['Reinforced index finger','Carpal tunnel prevention cream']);
 			if (this.amount>=10) Game.Unlock('Ambidextrous');
 			if (this.amount>=20) Game.Unlock('Thousand fingers');
-			if (this.amount>=40) Game.Unlock('Million fingers');
-			if (this.amount>=80) Game.Unlock('Billion fingers');
-			if (this.amount>=120) Game.Unlock('Trillion fingers');
-			if (this.amount>=160) Game.Unlock('Quadrillion fingers');
-			if (this.amount>=200) Game.Unlock('Quintillion fingers');
-			if (this.amount>=240) Game.Unlock('Sextillion fingers');
-			if (this.amount>=280) Game.Unlock('Septillion fingers');
-			if (this.amount>=320) Game.Unlock('Octillion fingers');
+			if (this.amount>=40) Game.Unlock('Un million de doigts');
+			if (this.amount>=80) Game.Unlock('Un milliard de doigts');
+			if (this.amount>=120) Game.Unlock('Un billion de doigts');
+			if (this.amount>=160) Game.Unlock('Un trillion de doigts');
+			if (this.amount>=200) Game.Unlock('Un quadrillion de doigts');
+			if (this.amount>=240) Game.Unlock('Un quintillion de doigts');
+			if (this.amount>=280) Game.Unlock('Un sextillion de doigts');
+			if (this.amount>=320) Game.Unlock('Un septillion de doigts');
 			
 			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');
 		});
 		
 		Game.SpecialGrandmaUnlock=15;
-		new Game.Object('Grandma','grandma|grandmas|baked','A nice grandma to bake more cookies.',function(type){
+		new Game.Object('Grandma','grand-mère|grand-mères|fait','Une gentille grand-mère pour faire encore plus de cookies.',function(type){
 				var grandmaIcons=['grandmaIcon','grandmaIconB','grandmaIconC','grandmaIconD'];
 				if (type=='off') return 'grandmaIcon';
 				return grandmaIcons[Game.elderWrath];
@@ -6070,13 +6070,13 @@ Game.Launch=function()
 		//define upgrades
 		//WARNING : do NOT add new upgrades in between, this breaks the saves. Add them at the end !
 		var order=100;//this is used to set the order in which the items are listed
-		new Game.Upgrade('Reinforced index finger','The mouse and cursors are <b>twice</b> as efficient.<q>prod prod</q>',100,[0,0]);
+		new Game.Upgrade('Index renforcé','The mouse and cursors are <b>twice</b> as efficient.<q>prod prod</q>',100,[0,0]);
 		new Game.Upgrade('Carpal tunnel prevention cream','The mouse and cursors are <b>twice</b> as efficient.<q>it... it hurts to click...</q>',500,[0,1]);
 		new Game.Upgrade('Ambidextrous','The mouse and cursors are <b>twice</b> as efficient.<q>Look ma, both hands!</q>',10000,[0,2])
 		new Game.Upgrade('Thousand fingers','The mouse and cursors gain <b>+0.1</b> cookies for each non-cursor object owned.<q>clickity</q>',100000,[0,13]);
-		new Game.Upgrade('Million fingers','The mouse and cursors gain <b>+0.5</b> cookies for each non-cursor object owned.<q>clickityclickity</q>',10000000,[0,14]);
-		new Game.Upgrade('Billion fingers','The mouse and cursors gain <b>+5</b> cookies for each non-cursor object owned.<q>clickityclickityclickity</q>',100000000,[0,15]);
-		new Game.Upgrade('Trillion fingers','The mouse and cursors gain <b>+50</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickity</q>',1000000000,[0,16]);
+		new Game.Upgrade('Un million de doigts','The mouse and cursors gain <b>+0.5</b> cookies for each non-cursor object owned.<q>clickityclickity</q>',10000000,[0,14]);
+		new Game.Upgrade('Un milliard de doigts','The mouse and cursors gain <b>+5</b> cookies for each non-cursor object owned.<q>clickityclickityclickity</q>',100000000,[0,15]);
+		new Game.Upgrade('Un billion de doigts','The mouse and cursors gain <b>+50</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickity</q>',1000000000,[0,16]);
 		
 		order=200;
 		new Game.TieredUpgrade('Forwards from grandma','Grandmas are <b>twice</b> as efficient.<q>RE:RE:thought you\'d get a kick out of this ;))</q>','Grandma',1);
@@ -6135,7 +6135,7 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'All-chocolate cookies',desc:'CHOCOVERDOSE.',icon:[9,3],power:												2,	price:	9999999999*5});
 		
 		order=100;
-		new Game.Upgrade('Quadrillion fingers','The mouse and cursors gain <b>+500</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickityclick</q>',10000000000,[0,17]);
+		new Game.Upgrade('Un trillion de doigts','The mouse and cursors gain <b>+500</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickityclick</q>',10000000000,[0,17]);
 		
 		order=200;new Game.TieredUpgrade('Prune juice','Grandmas are <b>twice</b> as efficient.<q>Gets me going.</q>','Grandma',4);
 		order=300;new Game.TieredUpgrade('Genetically-modified cookies','Farms are <b>twice</b> as efficient.<q>All-natural mutations.</q>','Farm',4);
@@ -6172,14 +6172,14 @@ Game.Launch=function()
 		}
 		
 		order=250;
-		new Game.Upgrade('Farmer grandmas',Game.getGrandmaSynergyUpgradeDesc('Farm')+'<q>A nice farmer to grow more cookies.</q>',Game.Objects['Farm'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Farmer grandmas',Game.getGrandmaSynergyUpgradeDesc('Farm')+'<q>Un gentil fermier pour faire encore plus de cookies.</q>',Game.Objects['Farm'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		new Game.Upgrade('Miner grandmas',Game.getGrandmaSynergyUpgradeDesc('Mine')+'<q>A nice miner to dig more cookies.</q>',Game.Objects['Mine'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		new Game.Upgrade('Worker grandmas',Game.getGrandmaSynergyUpgradeDesc('Factory')+'<q>A nice worker to manufacture more cookies.</q>',Game.Objects['Factory'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		order=255;
 		new Game.Upgrade('Cosmic grandmas',Game.getGrandmaSynergyUpgradeDesc('Shipment')+'<q>A nice thing to... uh... cookies.</q>',Game.Objects['Shipment'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		new Game.Upgrade('Transmuted grandmas',Game.getGrandmaSynergyUpgradeDesc('Alchemy lab')+'<q>A nice golden grandma to convert into more cookies.</q>',Game.Objects['Alchemy lab'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		new Game.Upgrade('Altered grandmas',Game.getGrandmaSynergyUpgradeDesc('Portal')+'<q>a NiCe GrAnDmA tO bA##########</q>',Game.Objects['Portal'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
-		new Game.Upgrade('Grandmas\' grandmas',Game.getGrandmaSynergyUpgradeDesc('Time machine')+'<q>A nice grandma\'s nice grandma to bake double the cookies.</q>',Game.Objects['Time machine'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grandmas\' grandmas',Game.getGrandmaSynergyUpgradeDesc('Time machine')+'<q>Une gentille grand-mère de grand-mère pour faire deux fois plus de cookies.</q>',Game.Objects['Time machine'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		
 		order=14000;
 		Game.baseResearchTime=Game.fps*60*30;
@@ -6241,7 +6241,7 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Zebra cookies',desc:'...',icon:[1,4],power:									2,	price:	999999999999});
 		
 		order=100;
-		new Game.Upgrade('Quintillion fingers','The mouse and cursors gain <b>+5000</b> cookies for each non-cursor object owned.<q>man, just go click click click click click, it\'s real easy, man.</q>',10000000000000,[0,18]);
+		new Game.Upgrade('Un quadrillion de doigts','The mouse and cursors gain <b>+5000</b> cookies for each non-cursor object owned.<q>man, just go click click click click click, it\'s real easy, man.</q>',10000000000000,[0,18]);
 		
 		order=40000;
 		new Game.Upgrade('Gold hoard','Golden cookies appear <b>really often</b>.<q>That\'s entirely too many.</q>',7,[10,14]);//debug purposes only
@@ -6311,7 +6311,7 @@ Game.Launch=function()
 		
 		
 		order=100;
-		new Game.Upgrade('Sextillion fingers','The mouse and cursors gain <b>+50000</b> cookies for each non-cursor object owned.<q>sometimes<br>things just<br>click</q>',100000000000000,[0,19]);
+		new Game.Upgrade('Un quintillion de doigts','The mouse and cursors gain <b>+50000</b> cookies for each non-cursor object owned.<q>sometimes<br>things just<br>click</q>',100000000000000,[0,19]);
 		
 		order=200;new Game.TieredUpgrade('Double-thick glasses','Grandmas are <b>twice</b> as efficient.<q>Oh... so THAT\'s what I\'ve been baking.</q>','Grandma',5);
 		order=300;new Game.TieredUpgrade('Gingerbread scarecrows','Farms are <b>twice</b> as efficient.<q>Staring at your crops with mischievous glee.</q>','Farm',5);
@@ -6445,8 +6445,8 @@ Game.Launch=function()
 		new Game.Upgrade('Kitten managers','You gain <b>more CpS</b> the more milk you have.<q>that\'s not gonna paws any problem, sir</q>',900000000000000000000,Game.GetIcon('Kitten',5));Game.last.kitten=1;
 		
 		order=100;
-		new Game.Upgrade('Septillion fingers','The mouse and cursors gain <b>+500000</b> cookies for each non-cursor object owned.<q>[cursory flavor text]</q>',1000000000000000,[12,19]);
-		new Game.Upgrade('Octillion fingers','The mouse and cursors gain <b>+5000000</b> cookies for each non-cursor object owned.<q>Turns out you <b>can</b> quite put your finger on it.</q>',10000000000000000,[12,19]);
+		new Game.Upgrade('Un sextillion de doigts','The mouse and cursors gain <b>+500000</b> cookies for each non-cursor object owned.<q>[cursory flavor text]</q>',1000000000000000,[12,19]);
+		new Game.Upgrade('Un septillion de doigts','The mouse and cursors gain <b>+5000000</b> cookies for each non-cursor object owned.<q>Turns out you <b>can</b> quite put your finger on it.</q>',10000000000000000,[12,19]);
 		
 		order=150;new Game.Upgrade('Eludium mouse','Clicking gains <b>+1% of your CpS</b>.<q>I rodent do that if I were you.</q>',500000000000000,[11,15]);
 		new Game.Upgrade('Wishalloy mouse','Clicking gains <b>+1% of your CpS</b>.<q>Clicking is fine and dandy, but don\'t smash your mouse over it. Get your game on. Go play.</q>',50000000000000000,[11,16]);
