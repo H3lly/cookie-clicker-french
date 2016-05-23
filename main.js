@@ -598,7 +598,7 @@ Game.Launch=function()
 	'<div class="title">09/04/2014 - quality of life</div>'+
 	'<div class="listing">&bull; new upgrade and achievement tier</div>'+
 	'<div class="listing">&bull; popups and prompts are much nicer</div>'+
-	'<div class="listing">&bull; tooltips on buildings are more informative</div>'+
+	'<div class="listing">&bull; tooltips on Les bâtiments sont more informative</div>'+
 	'<div class="listing">&bull; implemented a simplified version of the <a href="https://github.com/Icehawk78/FrozenCookies" target="_blank">Frozen Cookies</a> add-on\'s short number formatting</div>'+
 	'<div class="listing">&bull; you can now buy 10 and sell all of a building at a time</div>'+
 	'<div class="listing">&bull; tons of optimizations and subtler changes</div>'+
@@ -622,10 +622,10 @@ Game.Launch=function()
 	'</div><div class="subsection update small">'+
 	'<div class="title">14/02/2014 - lovely rainbowcalypse</div>'+
 	'<div class="listing">&bull; new building (it\'s been a while). More to come!</div>'+
-	'<div class="listing">&bull; you can now trigger seasonal events to your heart\'s content (upgrade unlocks at 5000 heavenly chips)</div>'+
+	'<div class="listing">&bull; you can now trigger seasonal events to your heart\'s content (upgrade Débloque at 5000 heavenly chips)</div>'+
 	'<div class="listing">&bull; new ultra-expensive batch of seasonal cookie upgrades you\'ll love to hate</div>'+
 	'<div class="listing">&bull; new timer bars for golden cookie buffs</div>'+
-	'<div class="listing">&bull; buildings are now hidden when you start out and appear as they become available</div>'+
+	'<div class="listing">&bull; Les bâtiments sont now hidden when you start out and appear as they become available</div>'+
 	'<div class="listing">&bull; technical stuff : the game is now saved through localstorage instead of browser cookies, therefore ruining a perfectly good pun</div>'+
 	
 	'</div><div class="subsection update small">'+
@@ -657,8 +657,8 @@ Game.Launch=function()
 	
 	'</div><div class="subsection update small">'+
 	'<div class="title">15/10/2013 - player-friendly</div>'+
-	'<div class="listing">&bull; heavenly upgrades are now way, way cheaper</div>'+
-	'<div class="listing">&bull; tier 5 building upgrades are 5 times cheaper</div>'+
+	'<div class="listing">&bull; heavenly Les améliorations sont now way, way cheaper</div>'+
+	'<div class="listing">&bull; tier 5 building Les améliorations sont 5 times cheaper</div>'+
 	'<div class="listing">&bull; cursors now just plain disappear with Fancy Graphics off, I might add a proper option to toggle only the cursors later</div>'+
 	'<div class="listing">&bull; warning : the Cookie Monster add-on seems to be buggy with this update, you might want to wait until its programmer updates it</div>'+
 	
@@ -684,7 +684,7 @@ Game.Launch=function()
 	'<div class="listing">&bull; new upgrade tier</div>'+
 	'<div class="listing">&bull; new milk tier</div>'+
 	'<div class="listing">&bull; cookie chains have different capping mechanics</div>'+
-	'<div class="listing">&bull; antimatter condensers are back to their previous price</div>'+
+	'<div class="listing">&bull; Les condensateurs d\'antimattières sont back to their previous price</div>'+
 	'<div class="listing">&bull; heavenly chips now give +2% CpS again (they will be extensively reworked in the future)</div>'+
 	'<div class="listing">&bull; farms have been buffed a bit (to popular demand)</div>'+
 	'<div class="listing">&bull; dungeons still need a bit more work and will be released soon - we want them to be just right! (you can test an unfinished version in <a href="http://orteil.dashnet.org/cookieclicker/betadungeons/" target="_blank">the beta</a>)</div>'+
@@ -694,7 +694,7 @@ Game.Launch=function()
 	'<div class="listing">&bull; from now on, big updates will come through a beta stage first (you can <a href="http://orteil.dashnet.org/cookieclicker/betadungeons/" target="_blank">try it here</a>)</div>'+
 	'<div class="listing">&bull; first dungeons! (you need 50 factories to unlock them!)</div>'+
 	'<div class="listing">&bull; cookie chains can be longer</div>'+
-	'<div class="listing">&bull; antimatter condensers are a bit more expensive</div>'+
+	'<div class="listing">&bull; Les condensateurs d\'antimattières sont a bit more expensive</div>'+
 	'<div class="listing">&bull; heavenly chips now only give +1% cps each (to account for all the cookies made from condensers)</div>'+
 	'<div class="listing">&bull; added flavor text on all upgrades</div>'+
 	
@@ -744,13 +744,13 @@ Game.Launch=function()
 	'<div class="title">31/08/2013 - hotfixes</div>'+
 	'<div class="listing">&bull; added a way to permanently stop the grandmapocalypse</div>'+
 	'<div class="listing">&bull; Elder Pledge price is now capped</div>'+
-	'<div class="listing">&bull; One Mind and other grandma research upgrades are now a little more powerful, if not 100% accurate</div>'+
+	'<div class="listing">&bull; One Mind and other grandma research Les améliorations sont now a little more powerful, if not 100% accurate</div>'+
 	'<div class="listing">&bull; "golden" cookie now appears again during grandmapocalypse; Elder Pledge-related achievements are now unlockable</div>'+
 	
 	'</div><div class="subsection update">'+
 	'<div class="title">31/08/2013 - too many grandmas</div>'+
 	'<div class="listing">&bull; the grandmapocalypse is back, along with more grandma types</div>'+
-	'<div class="listing">&bull; added some upgrades that boost your clicking power and make it scale with your cps</div>'+
+	'<div class="listing">&bull; added some upgrades that boost your Puissance de clic augmentée de and make it scale with your cps</div>'+
 	'<div class="listing">&bull; clicking achievements made harder; Neverclick is now a shadow achievement; Uncanny clicker should now truly be a world record</div>'+
 	
 	'</div><div class="subsection update small">'+
@@ -884,7 +884,7 @@ Game.Launch=function()
 		Game.cookiesd=0;//cookies display
 		Game.cookiesPs=1;//cookies per second (to recalculate with every new purchase)
 		Game.cookiesReset=0;//cookies lost to resetting (used to determine prestige and heavenly chips)
-		Game.frenzy=0;//as long as >0, cookie production is multiplied by frenzyPower
+		Game.frenzy=0;//as long as >0, Production de cookie is multiplied by frenzyPower
 		Game.frenzyMax=0;//how high was our initial burst
 		Game.frenzyPower=1;
 		Game.clickFrenzy=0;//as long as >0, mouse clicks get 777x more cookies
@@ -2263,7 +2263,7 @@ Game.Launch=function()
 		Game.ascensionModes={
 		0:{name:'None',desc:'No special modifiers.',icon:[10,0]},
 		1:{name:'Born again',desc:'This run will behave as if you\'d just started the game from scratch. Prestige levels and heavenly upgrades will have no effect.<div class="line"></div>Some achievements are only available in this mode.',icon:[2,7]}/*,
-		2:{name:'Trigger finger',desc:'In this run, scrolling your mouse wheel on the cookie counts as clicking it. Some upgrades introduce new clicking behaviors.<br>No clicking achievements may be obtained in this mode.<div class="line"></div>Reaching 1 quadrillion cookies in this mode unlocks a special heavenly upgrade.',icon:[12,0]}*/
+		2:{name:'Trigger finger',desc:'In this run, scrolling your mouse wheel on the cookie counts as clicking it. Some upgrades introduce new clicking behaviors.<br>No clicking achievements may be obtained in this mode.<div class="line"></div>Reaching 1 quadrillion cookies in this mode Débloque a special heavenly upgrade.',icon:[12,0]}*/
 		};
 		
 		Game.ascendMeterPercent=0;
@@ -2715,10 +2715,10 @@ Game.Launch=function()
 			for (var i in Game.Objects) {num+=Game.Objects[i].amount;}
 			num-=Game.Objects['Cursor'].amount;
 			add=add*num;
-			if (Game.Has('Plastic mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Iron mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Titanium mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Adamantium mouse')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Souris en plastique')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Souris en fer')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Souris en titanium')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Souris en adamantium')) add+=Game.cookiesPs*0.01;
 			if (Game.Has('Unobtainium mouse')) add+=Game.cookiesPs*0.01;
 			if (Game.Has('Eludium mouse')) add+=Game.cookiesPs*0.01;
 			if (Game.Has('Wishalloy mouse')) add+=Game.cookiesPs*0.01;
@@ -2728,7 +2728,7 @@ Game.Launch=function()
 			
 			for (var i in Game.customMouseCps) {mult+=Game.customMouseCps[i]();}
 			
-			if (Game.Has('Santa\'s helpers')) mult*=1.1;
+			if (Game.Has('Les bénévoles du Père Noël')) mult*=1.1;
 			if (Game.Has('Cookie egg')) mult*=1.1;
 			if (Game.Has('Halo gloves')) mult*=1.1;
 			if (Game.clickFrenzy>0) mult*=Game.clickFrenzyPower;
@@ -2914,7 +2914,7 @@ Game.Launch=function()
 			if (Game.Has('An itchy sweater')) mult*=1.01;
 			if (Game.Has('Santa\'s dominion')) mult*=1.2;
 			
-			if (Game.Has('Santa\'s legacy')) mult*=1+(Game.santaLevel+1)*0.03;
+			if (Game.Has('L\'héritage du Père Noël')) mult*=1+(Game.santaLevel+1)*0.03;
 			
 			for (var i in Game.Objects)
 			{
@@ -2932,7 +2932,7 @@ Game.Launch=function()
 			
 			Game.milkProgress=Game.AchievementsOwned/25;
 			var milkMult=1;
-			if (Game.Has('Santa\'s milk and cookies')) milkMult*=1.05;
+			if (Game.Has('Le lait et les cookies du Père Noël')) milkMult*=1.05;
 			if (Game.hasAura('Breath of Milk')) milkMult*=1.05;
 			if (Game.Has('Chattons bénévoles')) mult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Chattons ouvriers')) mult*=(1+Game.milkProgress*0.125*milkMult);
@@ -3242,7 +3242,7 @@ Game.Launch=function()
 					Game.frenzyPower=7;
 					Game.frenzyMax=Game.frenzy;
 					Game.recalculateGains=1;
-					popup=['Frenzy : cookie production x7 for '+time+' seconds!','Frenzy','Cookie production <b>x7</b> for <b>'+time+'</b> seconds!'];
+					popup=['Frenzy : production de cookie multipliée x7 pendant '+time+' secondes !','Frenzy','production de cookie multipliée <b>x7</b> pendant <b>'+time+'</b> secondes !'];
 				}
 				if (choice=='dragon harvest')
 				{
@@ -3251,17 +3251,17 @@ Game.Launch=function()
 					Game.frenzyPower=15;
 					Game.frenzyMax=Game.frenzy;
 					Game.recalculateGains=1;
-					popup=['Dragon harvest : cookie production x15 for '+time+' seconds!','Dragon harvest','Cookie production <b>x15</b> for <b>'+time+'</b> seconds!'];
+					popup=['Dragon harvest : production de cookie multipliée x15 pendant '+time+' secondes !','Dragon harvest','Production de cookie multipliée <b>x15</b> pendant <b>'+time+'</b> secondes !'];
 				}
 				else if (choice=='multiply cookies')
 				{
-					var moni=mult*Math.min(Game.cookies*0.15,Game.cookiesPs*60*15)+13;//add 15% to cookies owned (+13), or 15 minutes of cookie production - whichever is lowest
+					var moni=mult*Math.min(Game.cookies*0.15,Game.cookiesPs*60*15)+13;//add 15% to cookies owned (+13), or 15 minutes of Production de cookie - whichever is lowest
 					Game.Earn(moni);
 					popup=['Lucky! +'+Beautify(moni)+' cookies!','Lucky!','+<b>'+Beautify(moni)+'</b> cookies!'];
 				}
 				else if (choice=='ruin cookies')
 				{
-					var moni=Math.min(Game.cookies*0.05,Game.cookiesPs*60*10)+13;//lose 5% of cookies owned (-13), or 10 minutes of cookie production - whichever is lowest
+					var moni=Math.min(Game.cookies*0.05,Game.cookiesPs*60*10)+13;//lose 5% of cookies owned (-13), or 10 minutes of Production de cookie - whichever is lowest
 					moni=Math.min(Game.cookies,moni);
 					Game.Spend(moni);
 					popup=['Ruin! Lost '+Beautify(moni)+' cookies!','Ruin!','Lost <b>'+Beautify(moni)+'</b> cookies!'];
@@ -3273,7 +3273,7 @@ Game.Launch=function()
 					Game.frenzyPower=666;
 					Game.frenzyMax=Game.frenzy;
 					Game.recalculateGains=1;
-					popup=['Elder frenzy : cookie production x666 for '+time+' seconds!','Elder frenzy','Cookie production <b>x666</b> for <b>'+time+'</b> seconds!'];
+					popup=['Elder frenzy : Production de cookie multipliée x666 pendant '+time+' secondes !','Elder frenzy','Production de cookie multipliée <b>x666</b> pendant <b>'+time+'</b> secondes !'];
 				}
 				else if (choice=='clot')
 				{
@@ -3282,7 +3282,7 @@ Game.Launch=function()
 					Game.frenzyPower=0.5;
 					Game.frenzyMax=Game.frenzy;
 					Game.recalculateGains=1;
-					popup=['Clot : cookie production halved for '+time+' seconds!','Clot','Cookie production <b>halved</b> for <b>'+time+'</b> seconds!'];
+					popup=['Clot : Production de cookie divisé par deux pendant '+time+' secondes!','Clot','Production de cookie <b>divisée par deux</b> pendant <b>'+time+'</b> secondes !'];
 				}
 				else if (choice=='click frenzy')
 				{
@@ -3291,7 +3291,7 @@ Game.Launch=function()
 					Game.clickFrenzyPower=777;
 					Game.clickFrenzyMax=Game.clickFrenzy;
 					Game.recalculateGains=1;
-					popup=['Click frenzy! Clicking power x777 for '+time+' seconds!','Click frenzy','Clicking power <b>x777</b> for <b>'+time+'</b> seconds!'];
+					popup=['Click frenzy! Puissance de clic augmentée de x777 pendant '+time+' secondes !','Click frenzy','Puissance de clic augmentée de <b>x777</b> pendant <b>'+time+'</b> secondes !'];
 				}
 				else if (choice=='dragonflight')
 				{
@@ -3300,7 +3300,7 @@ Game.Launch=function()
 					Game.clickFrenzyPower=1111;
 					Game.clickFrenzyMax=Game.clickFrenzy;
 					Game.recalculateGains=1;
-					popup=['Dragonflight! Clicking power x1111 for '+time+' seconds!','Dragonflight','Clicking power <b>x1111</b> for <b>'+time+'</b> seconds!'];
+					popup=['Dragonflight! Puissance de clic augmentée de x1111 pendant '+time+' secondes !','Dragonflight','Puissance de clic augmentée de <b>x1111</b> pendant <b>'+time+'</b> secondes !'];
 				}
 				else if (choice=='chain cookie')
 				{
@@ -3397,7 +3397,7 @@ Game.Launch=function()
 			//time bonuses go here
 			if (Game.Has('Reindeer baking grounds')) m/=2;
 			if (Game.Has('Starsnow')) m*=0.95;
-			if (Game.Has('Reindeer season')) m=0.01;
+			if (Game.Has('La saison des rennes')) m=0.01;
 			return Math.ceil(Game.fps*60*m);
 		}
 		Game.seasonPopup.getMaxTime=function()
@@ -3406,7 +3406,7 @@ Game.Launch=function()
 			//time bonuses go here
 			if (Game.Has('Reindeer baking grounds')) m/=2;
 			if (Game.Has('Starsnow')) m*=0.95;
-			if (Game.Has('Reindeer season')) m=0.01;
+			if (Game.Has('La saison des rennes')) m=0.01;
 			return Math.ceil(Game.fps*60*m);
 		}
 		Game.seasonPopup.spawn=function()
@@ -3487,7 +3487,7 @@ Game.Launch=function()
 					var failRate=0.8;
 					var cookie='';
 					if (Game.HasAchiev('Let it snow')) failRate=0.6;
-					if (Game.Has('Santa\'s bottomless bag')) failRate*=0.9;
+					if (Game.Has('Le sac sans fond du Père Noël')) failRate*=0.9;
 					if (Game.hasAura('Mind Over Matter')) failRate*=0.75;
 					if (Game.Has('Starsnow')) failRate*=0.95;
 					if (Math.random()>failRate)//christmas cookie drops
@@ -6018,7 +6018,7 @@ Game.Launch=function()
 		{
 			/*
 				creates a new upgrade that :
-				-unlocks when you have tier.unlock of building1 and building2
+				-Débloque when you have tier.unlock of building1 and building2
 				-is priced at (building1.price*10+building2.price*1)*tier.price (formerly : Math.sqrt(building1.price*building2.price)*tier.price)
 				-gives +(0.1*building1)% cps to building2 and +(5*building2)% cps to building1
 				-if building2 is below building1 in worth, swap them
@@ -6081,9 +6081,9 @@ Game.Launch=function()
 		new Game.Upgrade('Un billion de doigts','La souris et les curseurs gagnent <b>+50</b> cookies pour chaque objet possedé n\'étant pas un curseur.<q>clickityclickityclickityclickity</q>',1000000000,[0,16]);
 		
 		order=200;
-		new Game.TieredUpgrade('Pour mamie','Les grand-mères sont<b>deux fois plus</b> efficace.<q>RE:RE:j\'suis sûr que tu kifferas ;))</q>','Grandma',1);
-		new Game.TieredUpgrade('Rouleaux à patisserie plaqués en acier','Les grand-mères sont<b>deux fois plus</b> efficace.<q>Tu pourras mettre la main à la pâte.</q>','Grandma',2);
-		new Game.TieredUpgrade('Dentiers lubrifiés','Les grand-mères sont<b>deux fois plus</b> efficace.<q>plouf</q>','Grandma',3);
+		new Game.TieredUpgrade('Pour mamie','Les grand-mères sont <b>deux fois plus</b> efficace.<q>RE:RE:j\'suis sûr que tu kifferas ;))</q>','Grandma',1);
+		new Game.TieredUpgrade('Rouleaux à patisserie plaqués en acier','Les grand-mères sont <b>deux fois plus</b> efficace.<q>Tu pourras mettre la main à la pâte.</q>','Grandma',2);
+		new Game.TieredUpgrade('Dentiers lubrifiés','Les grand-mères sont <b>deux fois plus</b> efficace.<q>plouf</q>','Grandma',3);
 		
 		order=300;
 		new Game.TieredUpgrade('Bécheuses bon marché','Les fermes sont<b>deux fois plus</b> efficace.<q>Rake in the dough!</q>','Farm',1);
@@ -6139,7 +6139,7 @@ Game.Launch=function()
 		order=100;
 		new Game.Upgrade('Un trillion de doigts','La souris et les curseurs gagnent <b>+500</b> cookies pour chaque objet possedé n\'étant pas un curseur.<q>clickityclickityclickityclickityclick</q>',10000000000,[0,17]);
 		
-		order=200;new Game.TieredUpgrade('Prune juice','Les grand-mères sont<b>deux fois plus</b> efficace.<q>Gets me going.</q>','Grandma',4);
+		order=200;new Game.TieredUpgrade('Prune juice','Les grand-mères sont <b>deux fois plus</b> efficace.<q>Gets me going.</q>','Grandma',4);
 		order=300;new Game.TieredUpgrade('Genetically-modified cookies','Les fermes sont<b>deux fois plus</b> efficace.<q>All-natural mutations.</q>','Farm',4);
 		order=500;new Game.TieredUpgrade('Radium reactors','Les usines sont <b>deux fois plus</b> efficace.<q>Gives your cookies a healthy glow.</q>','Factory',4);
 		order=400;new Game.TieredUpgrade('Ultimadrill','Les mines sont <b>deux fois plus</b> efficace.<q>Pierce the heavens, etc.</q>','Mine',4);
@@ -6170,7 +6170,7 @@ Game.Launch=function()
 			var grandmaNumber=(building.id-1);
 			if (grandmaNumber==1) grandmaNumber='grandma';
 			else grandmaNumber+=' grandmas';
-			return 'Les grand-mères sont<b>deux fois plus</b> efficace. '+(building.plural.charAt(0).toUpperCase()+building.plural.slice(1))+' gain <b>+1% CpS</b> per '+grandmaNumber+'.';
+			return 'Les grand-mères sont <b>deux fois plus</b> efficace. '+(building.plural.charAt(0).toUpperCase()+building.plural.slice(1))+' gain <b>+1% CpS</b> per '+grandmaNumber+'.';
 		}
 		
 		order=250;
@@ -6198,13 +6198,13 @@ Game.Launch=function()
 			}
 		}
 		
-		new Game.Upgrade('Centre de recherche/bingo','Grandma-operated science lab and leisure club.<br>Les grand-mères sont<b>4 fois plus</b> efficace.<br><b>Débloque fréquement des améliorations</b>.<q>What could possibly keep those grandmothers in check?...<br>Bingo.</q>',1000000000000000,[11,9],function(){Game.SetResearch('Specialized chocolate chips');});Game.last.noPerm=1;
+		new Game.Upgrade('Centre de recherche/bingo','Grandma-operated science lab and leisure club.<br>Les grand-mères sont <b>4 fois plus</b> efficace.<br><b>Débloque fréquement des améliorations</b>.<q>What could possibly keep those grandmothers in check?...<br>Bingo.</q>',1000000000000000,[11,9],function(){Game.SetResearch('Specialized chocolate chips');});Game.last.noPerm=1;
 		
 		order=15000;
 		
 		new Game.Upgrade('Specialized chocolate chips','Multiplie la production de cookie de <b>+1%</b>.<q>Computer-designed chocolate chips. Computer chips, if you will.</q>',100000000000,[0,9],function(){Game.SetResearch('Designer cocoa beans');});Game.last.pool='tech';
 		new Game.Upgrade('Designer cocoa beans','Multiplie la production de cookie de <b>+2%</b>.<q>Now more aerodynamic than ever!</q>',200000000000,[1,9],function(){Game.SetResearch('Ritual rolling pins');});Game.last.pool='tech';
-		new Game.Upgrade('Ritual rolling pins','Les grand-mères sont<b>deux fois plus</b> efficace.<q>The result of years of scientific research!</q>',400000000000,[2,9],function(){Game.SetResearch('Underworld ovens');});Game.last.pool='tech';
+		new Game.Upgrade('Ritual rolling pins','Les grand-mères sont <b>deux fois plus</b> efficace.<q>The result of years of scientific research!</q>',400000000000,[2,9],function(){Game.SetResearch('Underworld ovens');});Game.last.pool='tech';
 		new Game.Upgrade('Underworld ovens','Multiplie la production de cookie de <b>+3%</b>.<q>Powered by science, of course!</q>',800000000000,[3,9],function(){Game.SetResearch('One mind');});Game.last.pool='tech';
 		new Game.Upgrade('One mind','Chaque grand-mère gagne <b>+0.0<span></span>2 base CpS par grand-mères</b>.<div class="warning">Note : the grandmothers are growing restless. Do not encourage them.</div><q>We are one. We are many.</q>',1600000000000,[4,9],function(){Game.elderWrath=1;Game.SetResearch('Exotic nuts');Game.storeToRefresh=1;});Game.last.pool='tech';
 		//Game.last.clickFunction=function(){return confirm('Warning : purchasing this will have unexpected, and potentially undesirable results!\nIt\'s all downhill from here. You have been warned!\nPurchase anyway?');};
@@ -6229,13 +6229,13 @@ Game.Launch=function()
 		Game.last.priceFunc=function(){return Math.pow(8,Math.min(Game.pledges+2,14));}
 		
 		order=150;
-		new Game.Upgrade('Plastic mouse','Clicking gains <b>+1% of your CpS</b>.<q>Slightly squeaky.</q>',50000,[11,0]);
-		new Game.Upgrade('Iron mouse','Clicking gains <b>+1% of your CpS</b>.<q>Click like it\'s 1349!</q>',5000000,[11,1]);
-		new Game.Upgrade('Titanium mouse','Clicking gains <b>+1% of your CpS</b>.<q>Heavy, but powerful.</q>',500000000,[11,2]);
-		new Game.Upgrade('Adamantium mouse','Clicking gains <b>+1% of your CpS</b>.<q>You could cut diamond with these.</q>',50000000000,[11,13]);
+		new Game.Upgrade('Souris en plastique','Cliquer rapporte <b>+1% de vos CpS</b>.<q>Slightly squeaky.</q>',50000,[11,0]);
+		new Game.Upgrade('Souris en fer','Cliquer rapporte <b>+1% de vos CpS</b>.<q>Click like it\'s 1349!</q>',5000000,[11,1]);
+		new Game.Upgrade('Souris en titanium','Cliquer rapporte <b>+1% de vos CpS</b>.<q>Heavy, but powerful.</q>',500000000,[11,2]);
+		new Game.Upgrade('Souris en adamantium','Cliquer rapporte <b>+1% de vos CpS</b>.<q>You could cut diamond with these.</q>',50000000000,[11,13]);
 		
 		order=40000;
-		new Game.Upgrade('Ultrascience','Research takes only <b>5 seconds</b>.<q>YEAH, SCIENCE!</q>',7,[9,2]);//debug purposes only
+		new Game.Upgrade('Ultrascience','Les recherches de prennent que <b>5 secondes</b>.<q>YEAH, SCIENCE!</q>',7,[9,2]);//debug purposes only
 		Game.last.pool='debug';
 		
 		order=10020;
@@ -6243,14 +6243,14 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Zebra cookies',desc:'...',icon:[1,4],power:									2,	price:	999999999999});
 		
 		order=100;
-		new Game.Upgrade('Un quadrillion de doigts','La souris et les curseurs gagnent <b>+5000</b> cookies pour chaque objet possedé n\'étant pas un curseur.<q>man, just go click click click click click, it\'s real easy, man.</q>',10000000000000,[0,18]);
+		new Game.Upgrade('Un quadrillion de doigts','La souris et les curseurs gagnent <b>+5000</b> cookies pour chaque objet possedé n\'étant pas un curseur.<q>mec, just go click click click click click, it\'s real easy, man.</q>',10000000000000,[0,18]);
 		
 		order=40000;
 		new Game.Upgrade('Gold hoard','Les cookies dorés apparaissent <b>really often</b>.<q>That\'s entirely too many.</q>',7,[10,14]);//debug purposes only
 		Game.last.pool='debug';
 		
 		order=15000;
-		new Game.Upgrade('Elder Covenant','Puts a permanent end to the elders\' wrath, at the price of 5% of your CpS.<q>This is a complicated ritual involving silly, inconsequential trivialities such as cursed laxatives, century-old cacao, and an infant.<br>Don\'t question it.</q>',66666666666666,[8,9],function()
+		new Game.Upgrade('Elder Covenant','Puts a permanent end to the elders\' wrath, at the price of 5% de vos CpS.<q>This is a complicated ritual involving silly, inconsequential trivialities such as cursed laxatives, century-old cacao, and an infant.<br>Don\'t question it.</q>',66666666666666,[8,9],function()
 		{
 			Game.pledgeT=0;
 			Game.Lock('Revoke Elder Covenant');
@@ -6262,7 +6262,7 @@ Game.Launch=function()
 		});
 		Game.last.pool='toggle';
 
-		new Game.Upgrade('Revoke Elder Covenant','You will get 5% of your CpS back, but the grandmatriarchs will return.<q>we<br>rise<br>again</q>',6666666666,[8,9],function()
+		new Game.Upgrade('Revoke Elder Covenant','Vous récupérez 5% de vos CpS, mais les grande-matriarches reviendrons.<q>we<br>rise<br>again</q>',6666666666,[8,9],function()
 		{
 			Game.Lock('Elder Covenant');
 			Game.Unlock('Elder Covenant');
@@ -6270,10 +6270,10 @@ Game.Launch=function()
 		Game.last.pool='toggle';
 		
 		order=5000;
-		new Game.Upgrade('Get lucky','Golden cookie effects last <b>deux fois plus as long</b>.<q>You\'ve been up all night, haven\'t you?</q>',77777777777777,[27,6]);
+		new Game.Upgrade('Get lucky','Les effets des cookies dorés durent <b>deux fois plus longtemps</b>.<q>You\'ve been up all night, haven\'t you?</q>',77777777777777,[27,6]);
 		
 		order=15000;
-		new Game.Upgrade('Sacrificial rolling pins','Elder pledges last <b>deux fois plus</b> as long.<q>These are mostly just for spreading the anti-aging cream.<br>(And accessorily, shortening the chicken\'s suffering.)</q>',2888888888888,[2,9]);
+		new Game.Upgrade('Sacrificial rolling pins','Elder pledges dure <b>deux fois plus</b> longtemps.<q>These are mostly just for spreading the anti-aging cream.<br>(And accessorily, shortening the chicken\'s suffering.)</q>',2888888888888,[2,9]);
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Snickerdoodles',desc:'True to their name.',icon:[2,4],power:												2,	price:	999999999999*5});
@@ -6294,10 +6294,10 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Round chocolate british tea biscuits with heart motif',desc:'I like cookies.',icon:[11,4],require:Game.last.name,power:		2,	price:	99999999999999});
 		
 		order=1000;
-		new Game.TieredUpgrade('Sugar bosons','Antimatter condensers are <b>deux fois plus</b> efficace.<q>Sweet firm bosons.</q>','Antimatter condenser',1);
-		new Game.TieredUpgrade('String theory','Antimatter condensers are <b>deux fois plus</b> efficace.<q>Reveals new insight about the true meaning of baking cookies (and, as a bonus, the structure of the universe).</q>','Antimatter condenser',2);
-		new Game.TieredUpgrade('Large macaron collider','Antimatter condensers are <b>deux fois plus</b> efficace.<q>How singular!</q>','Antimatter condenser',3);
-		new Game.TieredUpgrade('Big bang bake','Antimatter condensers are <b>deux fois plus</b> efficace.<q>And that\'s how it all began.</q>','Antimatter condenser',4);
+		new Game.TieredUpgrade('Sugar bosons','Les condensateurs d\'antimattières sont <b>deux fois plus</b> efficace.<q>Sweet firm bosons.</q>','Antimatter condenser',1);
+		new Game.TieredUpgrade('String theory','Les condensateurs d\'antimattières sont <b>deux fois plus</b> efficace.<q>Reveals new insight about the true meaning of baking cookies (and, as a bonus, the structure of the universe).</q>','Antimatter condenser',2);
+		new Game.TieredUpgrade('Large macaron collider','Les condensateurs d\'antimattières sont <b>deux fois plus</b> efficace.<q>How singular!</q>','Antimatter condenser',3);
+		new Game.TieredUpgrade('Big bang bake','Les condensateurs d\'antimattières sont <b>deux fois plus</b> efficace.<q>And that\'s how it all began.</q>','Antimatter condenser',4);
 
 		order=255;
 		new Game.Upgrade('Anti-grand-mères',Game.getGrandmaSynergyUpgradeDesc('Antimatter condenser')+'<q>A mean antigrandma to vomit more cookies.<br>(Do not put in contact with normal grandmas; loss of matter may occur.)</q>',Game.Objects['Antimatter condenser'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
@@ -6315,7 +6315,7 @@ Game.Launch=function()
 		order=100;
 		new Game.Upgrade('Un quintillion de doigts','La souris et les curseurs gagnent <b>+50000</b> cookies pour chaque objet possedé n\'étant pas un curseur.<q>sometimes<br>things just<br>click</q>',100000000000000,[0,19]);
 		
-		order=200;new Game.TieredUpgrade('Double-thick glasses','Les grand-mères sont<b>deux fois plus</b> efficace.<q>Oh... so THAT\'s what I\'ve been baking.</q>','Grandma',5);
+		order=200;new Game.TieredUpgrade('Double-thick glasses','Les grand-mères sont <b>deux fois plus</b> efficace.<q>Oh... so THAT\'s what I\'ve been baking.</q>','Grandma',5);
 		order=300;new Game.TieredUpgrade('Gingerbread scarecrows','Les fermes sont<b>deux fois plus</b> efficace.<q>Staring at your crops with mischievous glee.</q>','Farm',5);
 		order=500;new Game.TieredUpgrade('Recombobulators','Les usines sont <b>deux fois plus</b> efficace.<q>A major part of cookie recombobulation.</q>','Factory',5);
 		order=400;new Game.TieredUpgrade('H-bomb mining','Les mines sont <b>deux fois plus</b> efficace.<q>Questionable efficiency, but spectacular nonetheless.</q>','Mine',5);
@@ -6323,10 +6323,10 @@ Game.Launch=function()
 		order=700;new Game.TieredUpgrade('Aqua crustulae','Les labos d\'alchimie sont <b>deux fois plus</b> efficace.<q>Careful with the dosing - one drop too much and you get muffins.<br>And nobody likes muffins.</q>','Alchemy lab',5);
 		order=800;new Game.TieredUpgrade('Brane transplant','Les portails sont <b>deux fois plus</b> efficace.<q>This refers to the practice of merging higher dimensional universes, or "branes", with our own, in order to facilitate transit (and harvesting of precious cookie dough).</q>','Portal',5);
 		order=900;new Game.TieredUpgrade('Yestermorrow comparators','Les machines à remonter le temps sont <b>deux fois plus</b> efficace.<q>Fortnights into milleniums.</q>','Time machine',5);
-		order=1000;new Game.TieredUpgrade('Reverse cyclotrons','Antimatter condensers are <b>deux fois plus</b> efficace.<q>These can uncollision particles and unspin atoms. For... uh... better flavor, and stuff.</q>','Antimatter condenser',5);
+		order=1000;new Game.TieredUpgrade('Reverse cyclotrons','Les condensateurs d\'antimattières sont <b>deux fois plus</b> efficace.<q>These can uncollision particles and unspin atoms. For... uh... better flavor, and stuff.</q>','Antimatter condenser',5);
 		
 		order=150;
-		new Game.Upgrade('Unobtainium mouse','Clicking gains <b>+1% of your CpS</b>.<q>These nice mice should suffice.</q>',5000000000000,[11,14]);
+		new Game.Upgrade('Unobtainium mouse','Cliquer rapporte <b>+1% de vos CpS</b>.<q>These nice mice should suffice.</q>',5000000000000,[11,14]);
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Caramoas',desc:'Yeah. That\'s got a nice ring to it.',icon:[14,4],require:'Box of brand biscuits',power:					3,	price:	9999999999999999});
@@ -6345,11 +6345,11 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Grease\'s cups',desc:'Extra-greasy peanut butter.',icon:[16,4],require:'Box of brand biscuits',power:												2,	price:	999999999999999*5});
 		
 		order=30000;
-		new Game.Upgrade('Heavenly chip secret','Unlocks <b>5%</b> of the potential of your prestige level.<q>Grants the knowledge of heavenly chips, and how to use them to make baking more efficient.<br>It\'s a secret to everyone.</q>',11,[19,7]);Game.last.noPerm=1;
-		new Game.Upgrade('Heavenly cookie stand','Unlocks <b>25%</b> of the potential of your prestige level.<q>Don\'t forget to visit the heavenly lemonade stand afterwards. When afterlife gives you lemons...</q>',1111,[18,7]);Game.last.noPerm=1;
-		new Game.Upgrade('Heavenly bakery','Unlocks <b>50%</b> of the potential of your prestige level.<q>Also sells godly cakes and divine pastries. The pretzels aren\'t too bad either.</q>',111111,[17,7]);Game.last.noPerm=1;
-		new Game.Upgrade('Heavenly confectionery','Unlocks <b>75%</b> of the potential of your prestige level.<q>They say angel bakers work there. They take angel lunch breaks and sometimes go on angel strikes.</q>',11111111,[16,7]);Game.last.noPerm=1;
-		new Game.Upgrade('Heavenly key','Unlocks <b>100%</b> of the potential of your prestige level.<q>This is the key to the pearly (and tasty) gates of pastry heaven, granting you access to your entire stockpile of heavenly chips for baking purposes.<br>May you use them wisely.</q>',1111111111,[15,7]);Game.last.noPerm=1;
+		new Game.Upgrade('Heavenly chip secret','Débloque <b>5%</b> du potentiel de votre niveau de prestige.<q>Grants the knowledge of heavenly chips, and how to use them to make baking more efficient.<br>It\'s a secret to everyone.</q>',11,[19,7]);Game.last.noPerm=1;
+		new Game.Upgrade('Heavenly cookie stand','Débloque <b>25%</b> du potentiel de votre niveau de prestige.<q>Don\'t forget to visit the heavenly lemonade stand afterwards. When afterlife gives you lemons...</q>',1111,[18,7]);Game.last.noPerm=1;
+		new Game.Upgrade('Heavenly bakery','Débloque <b>50%</b> du potentiel de votre niveau de prestige.<q>Also sells godly cakes and divine pastries. The pretzels aren\'t too bad either.</q>',111111,[17,7]);Game.last.noPerm=1;
+		new Game.Upgrade('Heavenly confectionery','Débloque <b>75%</b> du potentiel de votre niveau de prestige.<q>They say angel bakers work there. They take angel lunch breaks and sometimes go on angel strikes.</q>',11111111,[16,7]);Game.last.noPerm=1;
+		new Game.Upgrade('Heavenly key','Débloque <b>100%</b> du potentiel de votre niveau de prestige.<q>This is the key to the pearly (and tasty) gates of pastry heaven, granting you access to your entire stockpile of heavenly chips for baking purposes.<br>May you use them wisely.</q>',1111111111,[15,7]);Game.last.noPerm=1;
 		
 		order=10100;
 		Game.NewUpgradeCookie({name:'Skull cookies',desc:'Wanna know something spooky? You\'ve got one of these inside your head RIGHT NOW.',locked:1,icon:[12,8],power:	2, price: 444444444444});
@@ -6361,10 +6361,10 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Spider cookies',desc:'You found the recipe on the web. They do whatever a cookie can.',locked:1,icon:[18,8],power:						2, price: 444444444444});
 
 		order=0;
-		new Game.Upgrade('Mémoire persistante','Subsequent research will be <b>10 times</b> as fast.<q>It\'s all making sense!<br>Again!</q>',5,[9,2]);Game.last.pool='prestige';
+		new Game.Upgrade('Mémoire persistante','Les recherches futurs seront <b>10 fois</b> plus rapide.<q>It\'s all making sense!<br>Again!</q>',5,[9,2]);Game.last.pool='prestige';
 		
 		order=40000;
-		new Game.Upgrade('Wrinkler doormat','Wrinklers spawn much more frequently.<q>You\'re such a pushover.</q>',7,[19,8]);//debug purposes only
+		new Game.Upgrade('Wrinkler doormat','Wrinklers apparaissent plus fréquement.<q>You\'re such a pushover.</q>',7,[19,8]);//debug purposes only
 		Game.last.pool='debug';
 		
 		order=10200;
@@ -6389,27 +6389,26 @@ Game.Launch=function()
 			else Game.Notify('In the festive hat, you find...','a festive test tube<br>and <b>'+drop+'</b>.',Game.Upgrades[drop].icon);
 		});
 		
-		new Game.Upgrade('Increased merriness','Multiplie la production de cookie de <b>+15%</b>.<br>Cost scales with Santa level.<q>It turns out that the key to increased merriness, strangely enough, happens to be a good campfire and some s\'mores.<br>You know what they say, after all; the s\'more, the merrier.</q>',2525,[17,9]);
-		new Game.Upgrade('Improved jolliness','Multiplie la production de cookie de <b>+15%</b>.<br>Cost scales with Santa level.<q>A nice wobbly belly goes a long way.<br>You jolly?</q>',2525,[17,9]);
-		new Game.Upgrade('A lump of coal','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with Santa level.<q>Some of the world\'s worst stocking stuffing.<br>I guess you could try starting your own little industrial revolution, or something?...</q>',2525,[13,9]);
-		new Game.Upgrade('An itchy sweater','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with Santa level.<q>You don\'t know what\'s worse : the embarrassingly quaint "elf on reindeer" motif, or the fact that wearing it makes you feel like you\'re wrapped in a dead sasquatch.</q>',2525,[14,9]);
-		new Game.Upgrade('Reindeer baking grounds','Reindeer appear <b>deux fois plus as frequently</b>.<br>Cost scales with Santa level.<q>Male reindeer are from Mars; female reindeer are from venison.</q>',2525,[12,9]);
-		new Game.Upgrade('Weighted sleighs','Reindeer are <b>deux fois plus as slow</b>.<br>Cost scales with Santa level.<q>Hope it was worth the weight.<br>(Something something forced into cervidude)</q>',2525,[12,9]);
-		new Game.Upgrade('Ho ho ho-flavored frosting','Reindeer give <b>deux fois plus as much</b>.<br>Cost scales with Santa level.<q>It\'s time to up the antler.</q>',2525,[12,9]);
-		new Game.Upgrade('Season savings','All buildings are <b>1% cheaper</b>.<br>Cost scales with Santa level.<q>By Santa\'s beard, what savings!<br>But who will save us?</q>',2525,[16,9],function(){Game.storeToRefresh=1;});
-		new Game.Upgrade('Toy workshop','All upgrades are <b>5% cheaper</b>.<br>Cost scales with Santa level.<q>Watch yours-elf around elvesdroppers who might steal our production secrets.<br>Or elven worse!</q>',2525,[16,9],function(){Game.upgradesToRebuild=1;});
-		new Game.Upgrade('Naughty list','Les grand-mères sont<b>deux fois plus</b> as productive.<br>Cost scales with Santa level.<q>This list contains every unholy deed perpetuated by grandmakind.<br>He won\'t be checking this one deux fois plus.<br>Once. Once is enough.</q>',2525,[15,9]);
-		new Game.Upgrade('Santa\'s bottomless bag','Random drops are <b>10% more common</b>.<br>Cost scales with Santa level.<q>This is one bottom you can\'t check out.</q>',2525,[19,9]);
-		new Game.Upgrade('Santa\'s helpers','Clicking is <b>10% more powerful</b>.<br>Cost scales with Santa level.<q>Some choose to help hamburger; some choose to help you.<br>To each their own, I guess.</q>',2525,[19,9]);
-		new Game.Upgrade('Santa\'s legacy','Multiplie la production de cookie de <b>+3% per Santa\'s levels</b>.<br>Cost scales with Santa level.<q>In the north pole, you gotta get the elves first. Then when you get the elves, you start making the toys. Then when you get the toys... then you get the cookies.</q>',2525,[19,9]);
-		new Game.Upgrade('Santa\'s milk and cookies','Milk is <b>5% more powerful</b>.<br>Cost scales with Santa level.<q>Part of Santa\'s dreadfully unbalanced diet.</q>',2525,[19,9]);
-		
+		new Game.Upgrade('Increased merriness','Multiplie la production de cookie de <b>+15%</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>It turns out that the key to increased merriness, strangely enough, happens to be a good campfire and some s\'mores.<br>You know what they say, after all; the s\'more, the merrier.</q>',2525,[17,9]);
+		new Game.Upgrade('Improved jolliness','Multiplie la production de cookie de <b>+15%</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>A nice wobbly belly goes a long way.<br>You jolly?</q>',2525,[17,9]);
+		new Game.Upgrade('A lump of coal','Multiplie la production de cookie de <b>+1%</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>Some of the world\'s worst stocking stuffing.<br>I guess you could try starting your own little industrial revolution, or something?...</q>',2525,[13,9]);
+		new Game.Upgrade('An itchy sweater','Multiplie la production de cookie de <b>+1%</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>You don\'t know what\'s worse : the embarrassingly quaint "elf on reindeer" motif, or the fact that wearing it makes you feel like you\'re wrapped in a dead sasquatch.</q>',2525,[14,9]);
+		new Game.Upgrade('Reindeer baking grounds','Les rennes apparaissent <b>deux fois plus fréquement</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>Male Les rennes sont from Mars; female Les rennes sont from venison.</q>',2525,[12,9]);
+		new Game.Upgrade('Weighted sleighs','Les rennes sont <b>deux fois plus lent</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>Hope it was worth the weight.<br>(Something something forced into cervidude)</q>',2525,[12,9]);
+		new Game.Upgrade('Ho ho ho-flavored frosting','Les rennes donnent <b>deux fois plus</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>It\'s time to up the antler.</q>',2525,[12,9]);
+		new Game.Upgrade('Season savings','Tous les bâtiments sont <b>1% moins chers</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>By Santa\'s beard, what savings!<br>But who will save us?</q>',2525,[16,9],function(){Game.storeToRefresh=1;});
+		new Game.Upgrade('Toy workshop','Toutes les améliorations sont <b>5% moins chères</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>Watch yours-elf around elvesdroppers who might steal our production secrets.<br>Or elven worse!</q>',2525,[16,9],function(){Game.upgradesToRebuild=1;});
+		new Game.Upgrade('Naughty list','Les grand-mères sont <b>deux fois plus</b> productives.<br>Les coûts augmentent avec le niveau du Père Noël.<q>This list contains every unholy deed perpetuated by grandmakind.<br>He won\'t be checking this one deux fois plus.<br>Once. Once is enough.</q>',2525,[15,9]);
+		new Game.Upgrade('Le sac sans fond du Père Noël','Les lots aléatoires sont <b>10% plus commun</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>This is one bottom you can\'t check out.</q>',2525,[19,9]);
+		new Game.Upgrade('Les bénévoles du Père Noël','Cliquer est <b>10% plus puissant</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>Some choose to help hamburger; some choose to help you.<br>To each their own, I guess.</q>',2525,[19,9]);
+		new Game.Upgrade('L\'héritage du Père Noël','Multiplie la production de cookie de <b>+3% par niveau de Père Noël</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>In the north pole, you gotta get the elves first. Then when you get the elves, you start making the toys. Then when you get the toys... then you get the cookies.</q>',2525,[19,9]);
+		new Game.Upgrade('Le lait et les cookies du Père Noël','Le lait est <b>5% plus puissant</b>.<br>Les coûts augmentent avec le niveau du Père Noël.<q>Part of Santa\'s dreadfully unbalanced diet.</q>',2525,[19,9]);
 		order=40000;
-		new Game.Upgrade('Reindeer season','Reindeer spawn much more frequently.<q>Go, Cheater! Go, Hacker and Faker!</q>',7,[12,9]);//debug purposes only
+		new Game.Upgrade('La saison des rennes','Reindeer spawn much more frequently.<q>Go, Cheater! Go, Hacker and Faker!</q>',7,[12,9]);//debug purposes only
 		Game.last.pool='debug';
 		
 		order=25000;
-		new Game.Upgrade('Santa\'s dominion','Multiplie la production de cookie de <b>+20%</b>.<br>All buildings are <b>1% cheaper</b>.<br>All upgrades are <b>2% cheaper</b>.<q>My name is Claus, king of kings;<br>Look on my toys, ye Mighty, and despair!</q>',2525252525252525,[19,10],function(){Game.storeToRefresh=1;});
+		new Game.Upgrade('Santa\'s dominion','Multiplie la production de cookie de <b>+20%</b>.<br>Tous les bâtiments sont <b>1% moins chers</b>.<br>Toutes les augmentations sont <b>2% moins chères</b>.<q>My name is Claus, king of kings;<br>Look on my toys, ye Mighty, and despair!</q>',2525252525252525,[19,10],function(){Game.storeToRefresh=1;});
 		
 		order=10300;
 		var heartPower=function(){if (Game.Has('Starlove')) return 3; else return 2;};
@@ -6450,9 +6449,9 @@ Game.Launch=function()
 		new Game.Upgrade('Un sextillion de doigts','La souris et les curseurs gagnent <b>+500000</b> cookies pour chaque objet possedé n\'étant pas un curseur.<q>[cursory flavor text]</q>',1000000000000000,[12,19]);
 		new Game.Upgrade('Un septillion de doigts','La souris et les curseurs gagnent <b>+5000000</b> cookies pour chaque objet possedé n\'étant pas un curseur.<q>Turns out you <b>can</b> quite put your finger on it.</q>',10000000000000000,[12,19]);
 		
-		order=150;new Game.Upgrade('Eludium mouse','Clicking gains <b>+1% of your CpS</b>.<q>I rodent do that if I were you.</q>',500000000000000,[11,15]);
-		new Game.Upgrade('Wishalloy mouse','Clicking gains <b>+1% of your CpS</b>.<q>Clicking is fine and dandy, but don\'t smash your mouse over it. Get your game on. Go play.</q>',50000000000000000,[11,16]);
-		order=200;new Game.TieredUpgrade('Aging agents','Les grand-mères sont<b>deux fois plus</b> efficace.<q>Counter-intuitively, grandmas have the uncanny ability to become more powerful the older they get.</q>','Grandma',6);
+		order=150;new Game.Upgrade('Eludium mouse','Cliquer rapporte <b>+1% de vos CpS</b>.<q>I rodent do that if I were you.</q>',500000000000000,[11,15]);
+		new Game.Upgrade('Wishalloy mouse','Cliquer rapporte <b>+1% de vos CpS</b>.<q>Clicking is fine and dandy, but don\'t smash your mouse over it. Get your game on. Go play.</q>',50000000000000000,[11,16]);
+		order=200;new Game.TieredUpgrade('Aging agents','Les grand-mères sont <b>deux fois plus</b> efficace.<q>Counter-intuitively, grandmas have the uncanny ability to become more powerful the older they get.</q>','Grandma',6);
 		order=300;new Game.TieredUpgrade('Pulsar sprinklers','Les fermes sont<b>deux fois plus</b> efficace.<q>There\'s no such thing as over-watering. The moistest is the bestest.</q>','Farm',6);
 		order=500;new Game.TieredUpgrade('Deep-bake process','Les usines sont <b>deux fois plus</b> efficace.<q>A patented process increasing cookie yield two-fold for the same amount of ingredients. Don\'t ask how, don\'t take pictures, and be sure to wear your protective suit.</q>','Factory',6);
 		order=400;new Game.TieredUpgrade('Coreforge','Les mines sont <b>deux fois plus</b> efficace.<q>You\'ve finally dug a tunnel down to the Earth\'s core. It\'s pretty warm down here.</q>','Mine',6);
@@ -6460,7 +6459,7 @@ Game.Launch=function()
 		order=700;new Game.TieredUpgrade('Origin crucible','Les labos d\'alchimie sont <b>deux fois plus</b> efficace.<q>Built from the rarest of earths and located at the very deepest of the largest mountain, this legendary crucible is said to retain properties from the big-bang itself.</q>','Alchemy lab',6);
 		order=800;new Game.TieredUpgrade('Deity-sized portals','Les portails sont <b>deux fois plus</b> efficace.<q>It\'s almost like, say, an elder god could fit through this thing now. Hypothetically.</q>','Portal',6);
 		order=900;new Game.TieredUpgrade('Far future enactment','Les machines à remonter le temps sont <b>deux fois plus</b> efficace.<q>The far future enactment authorizes you to delve deep into the future - where civilization has fallen and risen again, and cookies are plentiful.</q>','Time machine',6);
-		order=1000;new Game.TieredUpgrade('Nanocosmics','Antimatter condensers are <b>deux fois plus</b> efficace.<q>The theory of nanocosmics posits that each subatomic particle is in fact its own self-contained universe, holding unfathomable amounts of energy.</q>','Antimatter condenser',6);
+		order=1000;new Game.TieredUpgrade('Nanocosmics','Les condensateurs d\'antimattières sont <b>deux fois plus</b> efficace.<q>The theory of nanocosmics posits that each subatomic particle is in fact its own self-contained universe, holding unfathomable amounts of energy.</q>','Antimatter condenser',6);
 		order=1100;
 		new Game.TieredUpgrade('Glow-in-the-dark','Prisms are <b>deux fois plus</b> efficace.<q>Your prisms now glow in the dark, effectively doubling their output!</q>','Prism',6);
 		
@@ -6473,7 +6472,7 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Violet macarons',desc:'It\'s like spraying perfume into your mouth!',icon:[24,4],require:'Box of macarons',							power:3,price: 9999999999999999999});
 		
 		order=40000;
-		new Game.Upgrade('Magic shenanigans','Cookie production <b>multiplied by 1,000</b>.<q>It\'s magic. I ain\'t gotta explain sh<div style="display:inline-block;background:url(img/money.png);width:16px;height:16px;position:relative;top:4px;left:0px;margin:0px -2px;"></div>t.</q>',7,[17,5]);//debug purposes only
+		new Game.Upgrade('Magic shenanigans','Production de cookie <b>multiplied by 1,000</b>.<q>It\'s magic. I ain\'t gotta explain sh<div style="display:inline-block;background:url(img/money.png);width:16px;height:16px;position:relative;top:4px;left:0px;margin:0px -2px;"></div>t.</q>',7,[17,5]);//debug purposes only
 		Game.last.pool='debug';
 		
 		
@@ -6482,31 +6481,31 @@ Game.Launch=function()
 		
 		var eggPrice=999999999999;
 		var eggPrice2=99999999999999;
-		new Game.Upgrade('Chicken egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>The egg. The egg came first. Get over it.</q>',eggPrice,[1,12]);
-		new Game.Upgrade('Duck egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>Then he waddled away.</q>',eggPrice,[2,12]);
-		new Game.Upgrade('Turkey egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>These hatch into strange, hand-shaped creatures.</q>',eggPrice,[3,12]);
-		new Game.Upgrade('Quail egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>These eggs are positively tiny. I mean look at them. How does this happen? Whose idea was that?</q>',eggPrice,[4,12]);
-		new Game.Upgrade('Robin egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>Holy azure-hued shelled embryos!</q>',eggPrice,[5,12]);
-		new Game.Upgrade('Ostrich egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>One of the largest eggs in the world. More like ostrouch, am I right?<br>Guys?</q>',eggPrice,[6,12]);
-		new Game.Upgrade('Cassowary egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>The cassowary is taller than you, possesses murderous claws and can easily outrun you.<br>You\'d do well to be casso-wary of them.</q>',eggPrice,[7,12]);
-		new Game.Upgrade('Salmon roe','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>Do the impossible, see the invisible.<br>Roe roe, fight the power?</q>',eggPrice,[8,12]);
-		new Game.Upgrade('Frogspawn','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>I was going to make a pun about how these "toadally look like eyeballs", but froget it.</q>',eggPrice,[9,12]);
-		new Game.Upgrade('Shark egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>HELLO IS THIS FOOD?<br>LET ME TELL YOU ABOUT FOOD.<br>WHY DO I KEEP EATING MY FRIENDS</q>',eggPrice,[10,12]);
-		new Game.Upgrade('Turtle egg','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>Turtles, right? Hatch from shells. Grow into shells. What\'s up with that?<br>Now for my skit about airplane food.</q>',eggPrice,[11,12]);
-		new Game.Upgrade('Ant larva','Multiplie la production de cookie de <b>+1%</b>.<br>Cost scales with how many eggs you own.<q>These are a delicacy in some countries, I swear. You will let these invade your digestive tract, and you will derive great pleasure from it.<br>And all will be well.</q>',eggPrice,[12,12]);
-		new Game.Upgrade('Golden goose egg','Les cookies dorés apparaissent <b>5% more often</b>.<br>Cost scales with how many eggs you own.<q>The sole vestige of a tragic tale involving misguided investments.</q>',eggPrice2,[13,12]);
-		new Game.Upgrade('Faberge egg','All buildings and upgrades are <b>1% cheaper</b>.<br>Cost scales with how many eggs you own.<q>This outrageous egg is definitely fab.</q>',eggPrice2,[14,12],function(){Game.storeToRefresh=1;});
-		new Game.Upgrade('Wrinklerspawn','Wrinklers explode into <b>5% more cookies</b>.<br>Cost scales with how many eggs you own.<q>Look at this little guy! It\'s gonna be a big boy someday! Yes it is!</q>',eggPrice2,[15,12]);
-		new Game.Upgrade('Cookie egg','Clicking is <b>10% more powerful</b>.<br>Cost scales with how many eggs you own.<q>The shell appears to be chipped.<br>I wonder what\'s inside this one!</q>',eggPrice2,[16,12]);
-		new Game.Upgrade('Omelette','Other eggs appear <b>10% more frequently</b>.<br>Cost scales with how many eggs you own.<q>Fromage not included.</q>',eggPrice2,[17,12]);
-		new Game.Upgrade('Chocolate egg','Contains <b>a lot of cookies</b>.<br>Cost scales with how many eggs you own.<q>Laid by the elusive cocoa bird. There\'s a surprise inside!</q>',eggPrice2,[18,12],function()
+		new Game.Upgrade('Chicken egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>The egg. The egg came first. Get over it.</q>',eggPrice,[1,12]);
+		new Game.Upgrade('Duck egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>Then he waddled away.</q>',eggPrice,[2,12]);
+		new Game.Upgrade('Turkey egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>These hatch into strange, hand-shaped creatures.</q>',eggPrice,[3,12]);
+		new Game.Upgrade('Quail egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>These eggs are positively tiny. I mean look at them. How does this happen? Whose idea was that?</q>',eggPrice,[4,12]);
+		new Game.Upgrade('Robin egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>Holy azure-hued shelled embryos!</q>',eggPrice,[5,12]);
+		new Game.Upgrade('Ostrich egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>One of the largest eggs in the world. More like ostrouch, am I right?<br>Guys?</q>',eggPrice,[6,12]);
+		new Game.Upgrade('Cassowary egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>The cassowary is taller than you, possesses murderous claws and can easily outrun you.<br>You\'d do well to be casso-wary of them.</q>',eggPrice,[7,12]);
+		new Game.Upgrade('Salmon roe','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>Do the impossible, see the invisible.<br>Roe roe, fight the power?</q>',eggPrice,[8,12]);
+		new Game.Upgrade('Frogspawn','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>I was going to make a pun about how these "toadally look like eyeballs", but froget it.</q>',eggPrice,[9,12]);
+		new Game.Upgrade('Shark egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>HELLO IS THIS FOOD?<br>LET ME TELL YOU ABOUT FOOD.<br>WHY DO I KEEP EATING MY FRIENDS</q>',eggPrice,[10,12]);
+		new Game.Upgrade('Turtle egg','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>Turtles, right? Hatch from shells. Grow into shells. What\'s up with that?<br>Now for my skit about airplane food.</q>',eggPrice,[11,12]);
+		new Game.Upgrade('Ant larva','Multiplie la production de cookie de <b>+1%</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>These are a delicacy in some countries, I swear. You will let these invade your digestive tract, and you will derive great pleasure from it.<br>And all will be well.</q>',eggPrice,[12,12]);
+		new Game.Upgrade('Golden goose egg','Les cookies dorés apparaissent <b>5% plus souvent</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>The sole vestige of a tragic tale involving misguided investments.</q>',eggPrice2,[13,12]);
+		new Game.Upgrade('Faberge egg','Tous les bâtiments et les améliorations sont <b>1% moins chers</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>This outrageous egg is definitely fab.</q>',eggPrice2,[14,12],function(){Game.storeToRefresh=1;});
+		new Game.Upgrade('Wrinklerspawn','Wrinklers explode into <b>5% de cookies en plus</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>Look at this little guy! It\'s gonna be a big boy someday! Yes it is!</q>',eggPrice2,[15,12]);
+		new Game.Upgrade('Cookie egg','Clicking is <b>10% plus puissant</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>The shell appears to be chipped.<br>I wonder what\'s inside this one!</q>',eggPrice2,[16,12]);
+		new Game.Upgrade('Omelette','Other eggs appear <b>10% plus fréquent</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>Fromage not included.</q>',eggPrice2,[17,12]);
+		new Game.Upgrade('Chocolate egg','Contient <b>beaucoup de cookies</b>.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>Laid by the elusive cocoa bird. There\'s a surprise inside!</q>',eggPrice2,[18,12],function()
 		{
 			var cookies=Game.cookies*0.05;
 			if (Game.prefs.popups) Game.Popup('The chocolate egg bursts into<br>'+Beautify(cookies)+'!');
 			else Game.Notify('Chocolate egg','The egg bursts into <b>'+Beautify(cookies)+'</b> cookies!',Game.Upgrades['Chocolate egg'].icon);
 			Game.Earn(cookies);
 		});
-		new Game.Upgrade('Century egg','You continually gain <b>plus de CpS the longer you\'ve played</b> in the current session.<br>Cost scales with how many eggs you own.<q>Actually not centuries-old. This one isn\'t a day over 86!</q>',eggPrice2,[19,12]);
+		new Game.Upgrade('Century egg','Vous gagnez continuellement <b>plus de CpS plus vous jouez longtemps</b> dans la session courante.<br>Les prix varient en fonction du nombre d\'oeuf que vous possédez.<q>Actually not centuries-old. This one isn\'t a day over 86!</q>',eggPrice2,[19,12]);
 		new Game.Upgrade('"egg"','<b>+9 CpS</b><q>hey it\'s "egg"</q>',eggPrice2,[20,12]);
 		
 		Game.easterEggs=['Chicken egg','Duck egg','Turkey egg','Quail egg','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva','Golden goose egg','Faberge egg','Wrinklerspawn','Cookie egg','Omelette','Chocolate egg','Century egg','"egg"'];
@@ -6531,7 +6530,7 @@ Game.Launch=function()
 			if (Game.HasAchiev('Hide & seek champion')) failRate*=0.7;
 			if (Game.Has('Omelette')) failRate*=0.9;
 			if (Game.Has('Starspawn')) failRate*=0.9;
-			if (Game.Has('Santa\'s bottomless bag')) failRate*=0.9;
+			if (Game.Has('Le sac sans fond du Père Noël')) failRate*=0.9;
 			if (Game.hasAura('Mind Over Matter')) failRate*=0.75;
 			if (Math.random()>=failRate)
 			{
@@ -6556,28 +6555,28 @@ Game.Launch=function()
 		
 		
 		order=525;
-		new Game.TieredUpgrade('Taller tellers','Banks are <b>deux fois plus</b> efficace.<q>Able to process a higher amount of transactions. Careful though, as taller tellers tell tall tales.</q>','Bank',1);
-		new Game.TieredUpgrade('Scissor-resistant credit cards','Banks are <b>deux fois plus</b> efficace.<q>For those truly valued customers.</q>','Bank',2);
-		new Game.TieredUpgrade('Acid-proof vaults','Banks are <b>deux fois plus</b> efficace.<q>You know what they say : better safe than sorry.</q>','Bank',3);
-		new Game.TieredUpgrade('Chocolate coins','Banks are <b>deux fois plus</b> efficace.<q>This revolutionary currency is much easier to melt from and into ingots - and tastes much better, for a change.</q>','Bank',4);
-		new Game.TieredUpgrade('Exponential interest rates','Banks are <b>deux fois plus</b> efficace.<q>Can\'t argue with mathematics! Now fork it over.</q>','Bank',5);
-		new Game.TieredUpgrade('Financial zen','Banks are <b>deux fois plus</b> efficace.<q>The ultimate grail of economic thought; the feng shui of big money, the stock market yoga - the Heimlich maneuver of dimes and nickels.</q>','Bank',6);
+		new Game.TieredUpgrade('Taller tellers','Les banques sont <b>deux fois plus</b> efficace.<q>Able to process a higher amount of transactions. Careful though, as taller tellers tell tall tales.</q>','Bank',1);
+		new Game.TieredUpgrade('Scissor-resistant credit cards','Les banques sont <b>deux fois plus</b> efficace.<q>For those truly valued customers.</q>','Bank',2);
+		new Game.TieredUpgrade('Acid-proof vaults','Les banques sont <b>deux fois plus</b> efficace.<q>You know what they say : better safe than sorry.</q>','Bank',3);
+		new Game.TieredUpgrade('Chocolate coins','Les banques sont <b>deux fois plus</b> efficace.<q>This revolutionary currency is much easier to melt from and into ingots - and tastes much better, for a change.</q>','Bank',4);
+		new Game.TieredUpgrade('Exponential interest rates','Les banques sont <b>deux fois plus</b> efficace.<q>Can\'t argue with mathematics! Now fork it over.</q>','Bank',5);
+		new Game.TieredUpgrade('Financial zen','Les banques sont <b>deux fois plus</b> efficace.<q>The ultimate grail of economic thought; the feng shui of big money, the stock market yoga - the Heimlich maneuver of dimes and nickels.</q>','Bank',6);
 		
 		order=550;
-		new Game.TieredUpgrade('Golden idols','Temples are <b>deux fois plus</b> efficace.<q>Lure even greedier adventurers to retrieve your cookies. Now that\'s a real idol game!</q>','Temple',1);
-		new Game.TieredUpgrade('Sacrifices','Temples are <b>deux fois plus</b> efficace.<q>What\'s a life to a gigaton of cookies?</q>','Temple',2);
-		new Game.TieredUpgrade('Delicious blessing','Temples are <b>deux fois plus</b> efficace.<q>And lo, the Baker\'s almighty spoon came down and distributed holy gifts unto the believers - shimmering sugar, and chocolate dark as night, and all manner of wheats. And boy let me tell you, that party was mighty gnarly.</q>','Temple',3);
-		new Game.TieredUpgrade('Sun festival','Temples are <b>deux fois plus</b> efficace.<q>Free the primordial powers of your temples with these annual celebrations involving fire-breathers, traditional dancing, ritual beheadings and other merriments!</q>','Temple',4);
-		new Game.TieredUpgrade('Enlarged pantheon','Temples are <b>deux fois plus</b> efficace.<q>Enough spiritual inadequacy! More divinities than you\'ll ever need, or your money back! 100% guaranteed!</q>','Temple',5);
-		new Game.TieredUpgrade('Great Baker in the sky','Temples are <b>deux fois plus</b> efficace.<q>This is it. The ultimate deity has finally cast Their sublimely divine eye upon your operation; whether this is a good thing or possibly the end of days is something you should find out very soon.</q>','Temple',6);
+		new Game.TieredUpgrade('Golden idols','Les temples sont <b>deux fois plus</b> efficace.<q>Lure even greedier adventurers to retrieve your cookies. Now that\'s a real idol game!</q>','Temple',1);
+		new Game.TieredUpgrade('Sacrifices','Les temples sont <b>deux fois plus</b> efficace.<q>What\'s a life to a gigaton of cookies?</q>','Temple',2);
+		new Game.TieredUpgrade('Delicious blessing','Les temples sont <b>deux fois plus</b> efficace.<q>And lo, the Baker\'s almighty spoon came down and distributed holy gifts unto the believers - shimmering sugar, and chocolate dark as night, and all manner of wheats. And boy let me tell you, that party was mighty gnarly.</q>','Temple',3);
+		new Game.TieredUpgrade('Sun festival','Les temples sont <b>deux fois plus</b> efficace.<q>Free the primordial powers of your temples with these annual celebrations involving fire-breathers, traditional dancing, ritual beheadings and other merriments!</q>','Temple',4);
+		new Game.TieredUpgrade('Enlarged pantheon','Les temples sont <b>deux fois plus</b> efficace.<q>Enough spiritual inadequacy! More divinities than you\'ll ever need, or your money back! 100% guaranteed!</q>','Temple',5);
+		new Game.TieredUpgrade('Great Baker in the sky','Les temples sont <b>deux fois plus</b> efficace.<q>This is it. The ultimate deity has finally cast Their sublimely divine eye upon your operation; whether this is a good thing or possibly the end of days is something you should find out very soon.</q>','Temple',6);
 		
 		order=575;
-		new Game.TieredUpgrade('Pointier hats','Wizard towers are <b>deux fois plus</b> efficace.<q>Tests have shown increased thaumic receptivity relative to the geometric proportions of wizardly conic implements.</q>','Wizard tower',1);
-		new Game.TieredUpgrade('Beardlier beards','Wizard towers are <b>deux fois plus</b> efficace.<q>Haven\'t you heard? The beard is the word.</q>','Wizard tower',2);
-		new Game.TieredUpgrade('Ancient grimoires','Wizard towers are <b>deux fois plus</b> efficace.<q>Contain interesting spells such as "Turn Water To Drool", "Grow Eyebrows On Furniture" and "Summon Politician".</q>','Wizard tower',3);
-		new Game.TieredUpgrade('Kitchen curses','Wizard towers are <b>deux fois plus</b> efficace.<q>Exotic magic involved in all things pastry-related. Hexcellent!</q>','Wizard tower',4);
-		new Game.TieredUpgrade('School of sorcery','Wizard towers are <b>deux fois plus</b> efficace.<q>This cookie-funded academy of witchcraft is home to the 4 prestigious houses of magic : the Jocks, the Nerds, the Preps, and the Deathmunchers.</q>','Wizard tower',5);
-		new Game.TieredUpgrade('Dark formulas','Wizard towers are <b>deux fois plus</b> efficace.<q>Eldritch forces are at work behind these spells - you get the feeling you really shouldn\'t be messing with those. But I mean, free cookies, right?</q>','Wizard tower',6);
+		new Game.TieredUpgrade('Pointier hats','Les tours de sorcier sont <b>deux fois plus</b> efficace.<q>Tests have shown increased thaumic receptivity relative to the geometric proportions of wizardly conic implements.</q>','Wizard tower',1);
+		new Game.TieredUpgrade('Beardlier beards','Les tours de sorcier sont <b>deux fois plus</b> efficace.<q>Haven\'t you heard? The beard is the word.</q>','Wizard tower',2);
+		new Game.TieredUpgrade('Ancient grimoires','Les tours de sorcier sont <b>deux fois plus</b> efficace.<q>Contain interesting spells such as "Turn Water To Drool", "Grow Eyebrows On Furniture" and "Summon Politician".</q>','Wizard tower',3);
+		new Game.TieredUpgrade('Kitchen curses','Les tours de sorcier sont <b>deux fois plus</b> efficace.<q>Exotic magic involved in all things pastry-related. Hexcellent!</q>','Wizard tower',4);
+		new Game.TieredUpgrade('School of sorcery','Les tours de sorcier sont <b>deux fois plus</b> efficace.<q>This cookie-funded academy of witchcraft is home to the 4 prestigious houses of magic : the Jocks, the Nerds, the Preps, and the Deathmunchers.</q>','Wizard tower',5);
+		new Game.TieredUpgrade('Dark formulas','Les tours de sorcier sont <b>deux fois plus</b> efficace.<q>Eldritch forces are at work behind these spells - you get the feeling you really shouldn\'t be messing with those. But I mean, free cookies, right?</q>','Wizard tower',6);
 
 		order=250;
 		new Game.Upgrade('Grand-mères banquières',Game.getGrandmaSynergyUpgradeDesc('Bank')+'<q>A nice banker to cash in more cookies.</q>',Game.Objects['Bank'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
@@ -6667,24 +6666,24 @@ Game.Launch=function()
 		new Game.Upgrade('Startrade','Les cookies dorés apparaissent <b>5%</b> more often during Business day.',111111,[17,6]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
 		
 		var angelPriceFactor=7;
-		var desc=function(percent,total){return 'vous gagnez another <b>+'+percent+'%</b> of your regular CpS while the game is closed, for a total of <b>'+total+'%</b>.';}
+		var desc=function(percent,total){return 'vous gagnez <b>+'+percent+'%</b> de vos CpS quand le jeu est fermé, pour un total de <b>'+total+'%</b>.';}
 		new Game.Upgrade('Angels',desc(10,15)+'<q>Lowest-ranking at the first sphere of pastry heaven, angels are tasked with delivering new recipes to the mortals they deem worthy.</q>',Math.pow(angelPriceFactor,1),[0,11]);Game.last.pool='prestige';Game.last.parents=['Twin Gates of Transcendence'];
 		new Game.Upgrade('Archangels',desc(10,25)+'<q>Members of the first sphere of pastry heaven, archangels are responsible for the smooth functioning of the world\'s largest bakeries.</q>',Math.pow(angelPriceFactor,2),[1,11]);Game.last.pool='prestige';Game.last.parents=['Angels'];
 		new Game.Upgrade('Virtues',desc(10,35)+'<q>Found at the second sphere of pastry heaven, virtues make use of their heavenly strength to push and drag the stars of the cosmos.</q>',Math.pow(angelPriceFactor,3),[2,11]);Game.last.pool='prestige';Game.last.parents=['Archangels'];
 		new Game.Upgrade('Dominions',desc(10,45)+'<q>Ruling over the second sphere of pastry heaven, dominions hold a managerial position and are in charge of accounting and regulating schedules.</q>',Math.pow(angelPriceFactor,4),[3,11]);Game.last.pool='prestige';Game.last.parents=['Virtues'];
 		new Game.Upgrade('Cherubim',desc(10,55)+'<q>Sieging at the first sphere of pastry heaven, the four-faced cherubim serve as heavenly bouncers and bodyguards.</q>',Math.pow(angelPriceFactor,5),[4,11]);Game.last.pool='prestige';Game.last.parents=['Dominions'];
-		new Game.Upgrade('Seraphim',desc(10,65)+'<q>Leading the first sphere of pastry heaven, seraphim possess ultimate knowledge of everything pertaining to baking.</q>',Math.pow(angelPriceFactor,6),[5,11]);Game.last.pool='prestige';Game.last.parents=['Cherubim'];
+		new Game.Upgrade('Seraphim',desc(10,65)+'<q>Leading the first sphere of pastry heaven, seraphim possess ultimate knowledge de tout.pertaining to baking.</q>',Math.pow(angelPriceFactor,6),[5,11]);Game.last.pool='prestige';Game.last.parents=['Cherubim'];
 		new Game.Upgrade('God',desc(10,75)+'<q>Like Santa, but less fun.</q>',Math.pow(angelPriceFactor,7),[6,11]);Game.last.pool='prestige';Game.last.parents=['Seraphim'];
 		
-		new Game.Upgrade('Twin Gates of Transcendence','You now <b>keep making cookies while the game is closed</b>, at the rate of <b>5%</b> of your regular CpS and up to <b>1 hour</b> after the game is closed.<br>(Beyond 1 hour, this is reduced by a further 90% - your rate goes down to <b>0.5%</b> of your CpS.)<q>This is one occasion you\'re always underdressed for. Don\'t worry, just rush in past the bouncer and pretend you know people.</q>',1,[15,11]);Game.last.pool='prestige';
+		new Game.Upgrade('Twin Gates of Transcendence','You now <b>keep making cookies while the game is closed</b>, at the rate of <b>5%</b> of your regular CpS and up to <b>1 hour</b> after the game is closed.<br>(Beyond 1 hour, this is reduced by a further 90% - your rate goes down to <b>0.5%</b> de vos CpS.)<q>This is one occasion you\'re always underdressed for. Don\'t worry, just rush in past the bouncer and pretend you know people.</q>',1,[15,11]);Game.last.pool='prestige';
 
-		new Game.Upgrade('Heavenly luck','Les cookies dorés apparaissent <b>5%</b> more often.<q>Someone up there likes you.</q>',77,[22,6]);Game.last.pool='prestige';
-		new Game.Upgrade('Lasting fortune','Golden cookies effects last <b>10%</b> longer.<q>This isn\'t your average everyday luck. This is... advanced luck.</q>',777,[23,6]);Game.last.pool='prestige';Game.last.parents=['Heavenly luck'];
-		new Game.Upgrade('Decisive fate','Golden cookies stay <b>5%</b> longer.<q>Life just got a bit more intense.</q>',7777,[10,14]);Game.last.pool='prestige';Game.last.parents=['Lasting fortune'];
+		new Game.Upgrade('Heavenly luck','Les cookies dorés apparaissent <b>5%</b> plus souvent.<q>Someone up there likes you.</q>',77,[22,6]);Game.last.pool='prestige';
+		new Game.Upgrade('Lasting fortune','Les effets des cookies dorés durent <b>10%</b> plus logntemps.<q>This isn\'t your average everyday luck. This is... advanced luck.</q>',777,[23,6]);Game.last.pool='prestige';Game.last.parents=['Heavenly luck'];
+		new Game.Upgrade('Decisive fate','Les cookies dorés restent<b>5%</b> plus longtemps.<q>Life just got a bit more intense.</q>',7777,[10,14]);Game.last.pool='prestige';Game.last.parents=['Lasting fortune'];
 
-		new Game.Upgrade('Divine discount','Buildings are <b>1% cheaper</b>.<q>Someone special deserves a special price.</q>',99999,[21,7]);Game.last.pool='prestige';Game.last.parents=['Decisive fate'];
-		new Game.Upgrade('Divine sales','Upgrades are <b>1% cheaper</b>.<q>Everything must go!</q>',99999,[18,7]);Game.last.pool='prestige';Game.last.parents=['Decisive fate'];
-		new Game.Upgrade('Divine bakeries','Cookie upgrades are <b>5 times cheaper</b>.<q>They sure know what they\'re doing.</q>',399999,[17,7]);Game.last.pool='prestige';Game.last.parents=['Divine sales','Divine discount'];
+		new Game.Upgrade('Divine discount','Les bâtiments sont <b>1% cheaper</b>.<q>Someone special deserves a special price.</q>',99999,[21,7]);Game.last.pool='prestige';Game.last.parents=['Decisive fate'];
+		new Game.Upgrade('Divine sales','Les améliorations sont <b>1% cheaper</b>.<q>Everything must go!</q>',99999,[18,7]);Game.last.pool='prestige';Game.last.parents=['Decisive fate'];
+		new Game.Upgrade('Divine bakeries','Les améliorations de cookies sont <b>5 fois moins chères</b>.<q>They sure know what they\'re doing.</q>',399999,[17,7]);Game.last.pool='prestige';Game.last.parents=['Divine sales','Divine discount'];
 		
 		new Game.Upgrade('Starter kit','You start with <b>10 cursors</b>.<q>This can come in handy.</q>',50,[0,14]);Game.last.pool='prestige';Game.last.parents=['Tin of british tea biscuits','Box of macarons','Box of brand biscuits','Tin of butter cookies'];
 		new Game.Upgrade('Starter kitchen','You start with <b>5 grandmas</b>.<q>Where did these come from?</q>',5000,[1,14]);Game.last.pool='prestige';Game.last.parents=['Starter kit'];
@@ -6696,34 +6695,34 @@ Game.Launch=function()
 		new Game.Upgrade('Sacrilegious corruption','Wrinklers regurgitate <b>5%</b> more cookies.<q>Unique in the animal kingdom, the wrinkler digestive tract is able to withstand an incredible degree of dilation - provided you prod them appropriately.</q>',444444,[19,8]);Game.last.pool='prestige';Game.last.parents=['Unholy bait'];
 		
 		
-		order=200;new Game.TieredUpgrade('Xtreme walkers','Les grand-mères sont<b>deux fois plus</b> efficace.<q>Complete with flame decals and a little horn that goes "toot".</q>','Grandma',7);
+		order=200;new Game.TieredUpgrade('Xtreme walkers','Les grand-mères sont <b>deux fois plus</b> efficace.<q>Complete with flame decals and a little horn that goes "toot".</q>','Grandma',7);
 		order=300;new Game.TieredUpgrade('Fudge fungus','Les fermes sont<b>deux fois plus</b> efficace.<q>A sugary parasite whose tendrils help cookie growth.<br>Please do not breathe in the spores. In case of spore ingestion, seek medical help within the next 36 seconds.</q>','Farm',7);
 		order=400;new Game.TieredUpgrade('Planetsplitters','Les mines sont <b>deux fois plus</b> efficace.<q>These new state-of-the-art excavators have been tested on Merula, Globort and Flwanza VI, among other distant planets which have been curiously quiet lately.</q>','Mine',7);
 		order=500;new Game.TieredUpgrade('Cyborg workforce','Les usines sont <b>deux fois plus</b> efficace.<q>Semi-synthetic organisms don\'t slack off, don\'t unionize, and have 20% shorter lunch breaks, making them ideal labor fodder.</q>','Factory',7);
-		order=525;new Game.TieredUpgrade('Way of the wallet','Banks are <b>deux fois plus</b> efficace.<q>This new monetary school of thought is all the rage on the banking scene; follow its precepts and you may just profit from it.</q>','Bank',7);
-		order=550;new Game.TieredUpgrade('Creation myth','Temples are <b>deux fois plus</b> efficace.<q>Stories have been circulating about the origins of the very first cookie that was ever baked; tales of how it all began, in the Dough beyond time and the Ovens of destiny.</q>','Temple',7);
-		order=575;new Game.TieredUpgrade('Cookiemancy','Wizard towers are <b>deux fois plus</b> efficace.<q>There it is; the perfected school of baking magic. From summoning chips to hexing nuts, there is not a single part of cookie-making that hasn\'t been improved tenfold by magic tricks.</q>','Wizard tower',7);
+		order=525;new Game.TieredUpgrade('Way of the wallet','Les banques sont <b>deux fois plus</b> efficace.<q>This new monetary school of thought is all the rage on the banking scene; follow its precepts and you may just profit from it.</q>','Bank',7);
+		order=550;new Game.TieredUpgrade('Creation myth','Les temples sont <b>deux fois plus</b> efficace.<q>Stories have been circulating about the origins of the very first cookie that was ever baked; tales of how it all began, in the Dough beyond time and the Ovens of destiny.</q>','Temple',7);
+		order=575;new Game.TieredUpgrade('Cookiemancy','Les tours de sorcier sont <b>deux fois plus</b> efficace.<q>There it is; the perfected school of baking magic. From summoning chips to hexing nuts, there is not a single part of cookie-making that hasn\'t been improved tenfold by magic tricks.</q>','Wizard tower',7);
 		order=600;new Game.TieredUpgrade('Dyson sphere','Les expéditions sont <b>deux fois plus</b> efficace.<q>You\'ve found a way to apply your knowledge of cosmic technology to slightly more local endeavors; this gigantic sphere of meta-materials, wrapping the solar system, is sure to kick your baking abilities up a notch.</q>','Shipment',7);
 		order=700;new Game.TieredUpgrade('Theory of atomic fluidity','Les labos d\'alchimie sont <b>deux fois plus</b> efficace.<q>Pushing alchemy to its most extreme limits, you find that everything is transmutable into anything else - lead to gold, mercury to water; more importantly, you realize that anything can -and should- be converted to cookies.</q>','Alchemy lab',7);
 		order=800;new Game.TieredUpgrade('End of times back-up plan','Les portails sont <b>deux fois plus</b> efficace.<q>Just in case, alright?</q>','Portal',7);
 		order=900;new Game.TieredUpgrade('Great loop hypothesis','Les machines à remonter le temps sont <b>deux fois plus</b> efficace.<q>What if our universe is just one instance of an infinite cycle? What if, before and after it, stretched infinite amounts of the same universe, themselves containing infinite amounts of cookies?</q>','Time machine',7);
-		order=1000;new Game.TieredUpgrade('The Pulse','Antimatter condensers are <b>deux fois plus</b> efficace.<q>You\'ve tapped into the very pulse of the cosmos, a timeless rhythm along which every material and antimaterial thing beats in unison. This, somehow, means more cookies.</q>','Antimatter condenser',7);
+		order=1000;new Game.TieredUpgrade('The Pulse','Les condensateurs d\'antimattières sont <b>deux fois plus</b> efficace.<q>You\'ve tapped into the very pulse of the cosmos, a timeless rhythm along which every material and antimaterial thing beats in unison. This, somehow, means more cookies.</q>','Antimatter condenser',7);
 		order=1100;
 		new Game.TieredUpgrade('Lux sanctorum','Prisms are <b>deux fois plus</b> efficace.<q>Your prism attendants have become increasingly mesmerized with something in the light - or maybe something beyond it; beyond us all, perhaps?</q>','Prism',7);
 		
 		
-		order=200;new Game.TieredUpgrade('The Unbridling','Les grand-mères sont<b>deux fois plus</b> efficace.<q>It might be a classic tale of bad parenting, but let\'s see where grandma is going with this.</q>','Grandma',8);
+		order=200;new Game.TieredUpgrade('The Unbridling','Les grand-mères sont <b>deux fois plus</b> efficace.<q>It might be a classic tale of bad parenting, but let\'s see where grandma is going with this.</q>','Grandma',8);
 		order=300;new Game.TieredUpgrade('Wheat triffids','Les fermes sont<b>deux fois plus</b> efficace.<q>Taking care of crops is so much easier when your plants can just walk about and help around the farm.<br>Do not pet. Do not feed. Do not attempt to converse with.</q>','Farm',8);
 		order=400;new Game.TieredUpgrade('Canola oil wells','Les mines sont <b>deux fois plus</b> efficace.<q>A previously untapped resource, canola oil permeates the underground olifers which grant it its particular taste and lucrative properties.</q>','Mine',8);
 		order=500;new Game.TieredUpgrade('78-hour days','Les usines sont <b>deux fois plus</b> efficace.<q>Why didn\'t we think of this earlier?</q>','Factory',8);
-		order=525;new Game.TieredUpgrade('The stuff rationale','Banks are <b>deux fois plus</b> efficace.<q>If not now, when? If not it, what? If not things... stuff?</q>','Bank',8);
-		order=550;new Game.TieredUpgrade('Theocracy','Temples are <b>deux fois plus</b> efficace.<q>You\'ve turned your cookie empire into a perfect theocracy, gathering the adoration of zillions of followers from every corner of the universe.<br>Don\'t let it go to your head.</q>','Temple',8);
-		order=575;new Game.TieredUpgrade('Rabbit trick','Wizard towers are <b>deux fois plus</b> efficace.<q>Using nothing more than a fancy top hat, your wizards have found a way to simultaneously curb rabbit population and produce heaps of extra cookies for basically free!<br>Resulting cookies may or may not be fit for vegans.</q>','Wizard tower',8);
+		order=525;new Game.TieredUpgrade('The stuff rationale','Les banques sont <b>deux fois plus</b> efficace.<q>If not now, when? If not it, what? If not things... stuff?</q>','Bank',8);
+		order=550;new Game.TieredUpgrade('Theocracy','Les temples sont <b>deux fois plus</b> efficace.<q>You\'ve turned your cookie empire into a perfect theocracy, gathering the adoration of zillions of followers from every corner of the universe.<br>Don\'t let it go to your head.</q>','Temple',8);
+		order=575;new Game.TieredUpgrade('Rabbit trick','Les tours de sorcier sont <b>deux fois plus</b> efficace.<q>Using nothing more than a fancy top hat, your wizards have found a way to simultaneously curb rabbit population and produce heaps of extra cookies for basically free!<br>Resulting cookies may or may not be fit for vegans.</q>','Wizard tower',8);
 		order=600;new Game.TieredUpgrade('The final frontier','Les expéditions sont <b>deux fois plus</b> efficace.<q>It\'s been a long road, getting from there to here. It\'s all worth it though - the sights are lovely and the oil prices slightly more reasonable.</q>','Shipment',8);
 		order=700;new Game.TieredUpgrade('Beige goo','Les labos d\'alchimie sont <b>deux fois plus</b> efficace.<q>Well now you\'ve done it. Good job. Very nice. That\'s 3 galaxies you\'ve just converted into cookies. Good thing you can hop from universe to universe.</q>','Alchemy lab',8);
 		order=800;new Game.TieredUpgrade('Maddening chants','Les portails sont <b>deux fois plus</b> efficace.<q>A popular verse goes like so : "jau\'hn madden jau\'hn madden aeiouaeiouaeiou brbrbrbrbrbrbr"</q>','Portal',8);
 		order=900;new Game.TieredUpgrade('Cookietopian moments of maybe','Les machines à remonter le temps sont <b>deux fois plus</b> efficace.<q>Reminiscing how things could have been, should have been, will have been.</q>','Time machine',8);
-		order=1000;new Game.TieredUpgrade('Some other super-tiny fundamental particle? Probably?','Antimatter condensers are <b>deux fois plus</b> efficace.<q>When even the universe is running out of ideas, that\'s when you know you\'re nearing the end.</q>','Antimatter condenser',8);
+		order=1000;new Game.TieredUpgrade('Some other super-tiny fundamental particle? Probably?','Les condensateurs d\'antimattières sont <b>deux fois plus</b> efficace.<q>When even the universe is running out of ideas, that\'s when you know you\'re nearing the end.</q>','Antimatter condenser',8);
 		order=1100;
 		new Game.TieredUpgrade('Reverse shadows','Prisms are <b>deux fois plus</b> efficace.<q>Oh man, this is really messing with your eyes.</q>','Prism',8);
 		
@@ -6736,15 +6735,15 @@ Game.Launch=function()
 		new Game.Upgrade('How to bake your dragon','Allows you to purchase a <b>crumbly egg</b> once you have earned 1 million cookies.<q>A tome full of helpful tips such as "oh god, stay away from it", "why did we buy this thing, it\'s not even house-broken" and "groom deux fois plus a week in the direction of the scales".</q>',9,[22,12]);Game.last.pool='prestige';
 
 		order=25100;
-		new Game.Upgrade('A crumbly egg','Unlocks the <b>cookie dragon egg</b>.<q>Thank you for adopting this robust, fun-loving cookie dragon! It will bring you years of joy and entertainment.<br>Keep in a dry and cool place, and away from other house pets. Subscription to home insurance is strongly advised.</q>',25,[21,12]);
+		new Game.Upgrade('A crumbly egg','Débloque  le <b>cookie dragon egg</b>.<q>Thank you for adopting this robust, fun-loving cookie dragon! It will bring you years of joy and entertainment.<br>Keep in a dry and cool place, and away from other house pets. Subscription to home insurance is strongly advised.</q>',25,[21,12]);
 		
-		new Game.Upgrade('Chimera','Synergy upgrades are <b>2% cheaper</b>.<br>vous gagnez another <b>+5%</b> of your regular CpS while the game is closed.<br>You retain optimal cookie production while the game is closed for <b>2 more days</b>.<q>More than the sum of its parts.</q>',Math.pow(angelPriceFactor,8),[24,7]);Game.last.pool='prestige';Game.last.parents=['God','Lucifer','Synergies Vol. II'];
+		new Game.Upgrade('Chimera','Synergy Les améliorations sont <b>2% cheaper</b>.<br>vous gagnez another <b>+5%</b> of your regular CpS while the game is closed.<br>You retain optimal Production de cookie while the game is closed for <b>2 more days</b>.<q>More than the sum of its parts.</q>',Math.pow(angelPriceFactor,8),[24,7]);Game.last.pool='prestige';Game.last.parents=['God','Lucifer','Synergies Vol. II'];
 		
 		new Game.Upgrade('Tin of butter cookies','Contains an assortment of rich butter cookies.<q>Five varieties of danish cookies.<br>Complete with little paper cups.</q>',25,[21,9]);Game.last.pool='prestige';
 		
-		new Game.Upgrade('Golden switch','Unlocks the <b>golden switch</b>, which passively boosts your CpS by 50% but disables golden cookies.<q>Less clicking, more idling.</q>',999,[21,10]);Game.last.pool='prestige';Game.last.parents=['Heavenly luck'];
+		new Game.Upgrade('Golden switch','Débloque the <b>golden switch</b>, which passively boosts your CpS by 50% but disables golden cookies.<q>Less clicking, more idling.</q>',999,[21,10]);Game.last.pool='prestige';Game.last.parents=['Heavenly luck'];
 		
-		new Game.Upgrade('Classic dairy selection','Unlocks the <b>milk selector</b>, letting you pick which milk is displayed under your cookie.<br>Comes with a variety of basic flavors.<q>Don\'t have a cow, man.</q>',9,[1,8]);Game.last.pool='prestige';Game.last.parents=[];
+		new Game.Upgrade('Classic dairy selection','Débloque the <b>milk selector</b>, letting you pick which milk is displayed under your cookie.<br>Comes with a variety of basic flavors.<q>Don\'t have a cow, man.</q>',9,[1,8]);Game.last.pool='prestige';Game.last.parents=[];
 		
 		new Game.Upgrade('Fanciful dairy selection','Contains more exotic flavors for your milk selector.<q>Strong bones for the skeleton army.</q>',1000000,[9,7]);Game.last.pool='prestige';Game.last.parents=['Classic dairy selection'];
 		
@@ -6820,10 +6819,10 @@ Game.Launch=function()
 		
 		
 		order=10300;
-		Game.NewUpgradeCookie({name:'Milk chocolate butter biscuit',desc:'Rewarded for owning 100 of everything.<br>It bears the engraving of a fine entrepreneur.',icon:[27,8],power:	10,price: 999999999999999999999,locked:1});
-		Game.NewUpgradeCookie({name:'Dark chocolate butter biscuit',desc:'Rewarded for owning 150 of everything.<br>It is adorned with the image of an experienced cookie tycoon.',icon:[27,9],power:	10,price: 999999999999999999999999,locked:1});
-		Game.NewUpgradeCookie({name:'White chocolate butter biscuit',desc:'Rewarded for owning 200 of everything.<br>The chocolate is chiseled to depict a masterful pastry magnate.',icon:[28,9],power:	10,price: 999999999999999999999999999,locked:1});
-		Game.NewUpgradeCookie({name:'Ruby chocolate butter biscuit',desc:'Rewarded for owning 250 of everything.<br>Covered in a rare red chocolate, this biscuit is etched to represent the face of a cookie industralist made mad with power.',icon:[28,8],power:	10,price: 999999999999999999999999999999,locked:1});
+		Game.NewUpgradeCookie({name:'Milk chocolate butter biscuit',desc:'Récompensé pour avoir 100 de tout.<br>It bears the engraving of a fine entrepreneur.',icon:[27,8],power:	10,price: 999999999999999999999,locked:1});
+		Game.NewUpgradeCookie({name:'Dark chocolate butter biscuit',desc:'Récompensé pour avoir 150 de tout.<br>It is adorned with the image of an experienced cookie tycoon.',icon:[27,9],power:	10,price: 999999999999999999999999,locked:1});
+		Game.NewUpgradeCookie({name:'White chocolate butter biscuit',desc:'Récompensé pour avoir 200 de tout.<br>The chocolate is chiseled to depict a masterful pastry magnate.',icon:[28,9],power:	10,price: 999999999999999999999999999,locked:1});
+		Game.NewUpgradeCookie({name:'Ruby chocolate butter biscuit',desc:'Récompensé pour avoir 250 de tout.<br>Covered in a rare red chocolate, this biscuit is etched to represent the face of a cookie industralist made mad with power.',icon:[28,8],power:	10,price: 999999999999999999999999999999,locked:1});
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Gingersnaps',desc:'Cookies with a soul. Probably.',icon:[29,10],power:						4,price: 99999999999999999999});
@@ -6854,7 +6853,7 @@ Game.Launch=function()
 			var days=Math.floor(totalHours/24);
 			var str=hours+(hours==1?' hour':' hours');
 			if (days>0) str=days+(days==1?' day':' days')+' and '+str;
-			return 'You retain optimal cookie production while the game is closed for deux fois plus as long, for a total of <b>'+str+'</b>.';
+			return 'You retain optimal Production de cookie while the game is closed for deux fois plus as long, for a total of <b>'+str+'</b>.';
 		}
 		new Game.Upgrade('Belphegor',desc(2)+'<q>A demon of shortcuts and laziness, Belphegor commands machines to do work in his stead.</q>',Math.pow(angelPriceFactor,1),[7,11]);Game.last.pool='prestige';Game.last.parents=['Twin Gates of Transcendence'];
 		new Game.Upgrade('Mammon',desc(4)+'<q>The demonic embodiment of wealth, Mammon requests a tithe of blood and gold from all his worshippers.</q>',Math.pow(angelPriceFactor,2),[8,11]);Game.last.pool='prestige';Game.last.parents=['Belphegor'];
@@ -6865,7 +6864,7 @@ Game.Launch=function()
 		new Game.Upgrade('Lucifer',desc(128)+'<q>Also known as the Lightbringer, this infernal prince\'s tremendous ego caused him to be cast down from pastry heaven.</q>',Math.pow(angelPriceFactor,7),[13,11]);Game.last.pool='prestige';Game.last.parents=['Beelzebub'];
 		
 		
-		new Game.Upgrade('Golden cookie alert sound','Unlocks the <b>golden cookie sound selector</b>, which lets you pick whether golden cookies emit a sound when appearing or not.<q>A sound decision.</q>',9999,[28,6]);Game.last.pool='prestige';Game.last.parents=['Decisive fate','Golden switch'];
+		new Game.Upgrade('Golden cookie alert sound','Débloque the <b>golden cookie sound selector</b>, which lets you pick whether golden cookies emit a sound when appearing or not.<q>A sound decision.</q>',9999,[28,6]);Game.last.pool='prestige';Game.last.parents=['Decisive fate','Golden switch'];
 		
 		new Game.Upgrade('Golden cookie sound selector','Lets you change the sound golden cookies make when they spawn.',0,[28,6]);
 		Game.last.pool='toggle';
@@ -6882,7 +6881,7 @@ Game.Launch=function()
 		{Game.chimeType=id;}
 		
 		
-		new Game.Upgrade('Basic wallpaper assortment','Unlocks the <b>background selector</b>, letting you select the game\'s background.<br>Comes with a variety of basic flavors.<div class="warning">Note : not implemented yet.<br>Coming soon, probably.</div><q>Prioritizing aesthetics over crucial utilitarian upgrades? Color me impressed.</q>',99,[29,5]);Game.last.pool='prestige';Game.last.parents=['Classic dairy selection'];
+		new Game.Upgrade('Basic wallpaper assortment','Débloque le <b>sélecteur d\'arrière plan</b>, letting you select the game\'s background.<br>Comes with a variety of basic flavors.<div class="warning">Note : not implemented yet.<br>Coming soon, probably.</div><q>Prioritizing aesthetics over crucial utilitarian upgrades? Color me impressed.</q>',99,[29,5]);Game.last.pool='prestige';Game.last.parents=['Classic dairy selection'];
 		
 		new Game.Upgrade('Legacy','Each time you ascend, the cookies you made in your past life are turned into <b>heavenly chips</b> and <b>prestige</b>.<div class="line"></div><b>Heavenly chips</b> can be spent on a variety of permanent transcendental upgrades.<div class="line"></div>Your <b>prestige level</b> also gives you a permanent <b>+1% CpS</b> per level.<q>We\'ve all been waiting for you.</q>',1,[21,6]);Game.last.pool='prestige';Game.last.parents=[];
 		
@@ -6890,11 +6889,11 @@ Game.Launch=function()
 		
 		new Game.Upgrade('Residual luck','While the golden switch is on, vous gagnez an additional <b>+10% CpS</b> per golden cookie upgrade owned.<q>Fortune comes in many flavors.</q>',99999,[27,6]);Game.last.pool='prestige';Game.last.parents=['Golden switch'];
 		
-		order=150;new Game.Upgrade('Fantasteel mouse','Clicking gains <b>+1% of your CpS</b>.<q>You could be clicking using your touchpad and we\'d be none the wiser.</q>',5000000000000000000,[11,17]);
-		new Game.Upgrade('Nevercrack mouse','Clicking gains <b>+1% of your CpS</b>.<q>How much beefier can you make a mouse until it\'s considered a rat?</q>',500000000000000000000,[11,18]);
+		order=150;new Game.Upgrade('Fantasteel mouse','Cliquer rapporte <b>+1% de vos CpS</b>.<q>You could be clicking using your touchpad and we\'d be none the wiser.</q>',5000000000000000000,[11,17]);
+		new Game.Upgrade('Nevercrack mouse','Cliquer rapporte <b>+1% de vos CpS</b>.<q>How much beefier can you make a mouse until it\'s considered a rat?</q>',500000000000000000000,[11,18]);
 		
 		
-		new Game.Upgrade('Five-finger discount','All upgrades are <b>1% cheaper per 100 cursors</b>.<q>Stick it to the man.</q>',555555,[28,7],function(){Game.upgradesToRebuild=1;});Game.last.pool='prestige';Game.last.parents=['Halo gloves','Abaddon'];
+		new Game.Upgrade('Five-finger discount','Toutes les augmentations sont <b>1% cheaper per 100 cursors</b>.<q>Stick it to the man.</q>',555555,[28,7],function(){Game.upgradesToRebuild=1;});Game.last.pool='prestige';Game.last.parents=['Halo gloves','Abaddon'];
 		
 		
 		order=5000;
@@ -6935,8 +6934,8 @@ Game.Launch=function()
 		new Game.SynergyUpgrade('Mystical energies','<q>Something beckons from within the light. It is warm, comforting, and apparently the cause for several kinds of exotic skin cancers.</q>','Prism','Temple','synergy2');
 		
 		
-		new Game.Upgrade('Synergies Vol. I','Unlocks a new tier of upgrades that affect <b>2 buildings at the same time</b>.<br>Synergies appear once you have <b>15</b> of both buildings.<q>The many beats the few.</q>',2525,[10,20]);Game.last.pool='prestige';Game.last.parents=['Satan','Dominions'];
-		new Game.Upgrade('Synergies Vol. II','Unlocks a new tier of upgrades that affect <b>2 buildings at the same time</b>.<br>Synergies appear once you have <b>75</b> of both buildings.<q>The several beats the many.</q>',252525,[10,20]);Game.last.pool='prestige';Game.last.parents=['Beelzebub','Seraphim','Synergies Vol. I'];
+		new Game.Upgrade('Synergies Vol. I','Débloque a new tier of upgrades that affect <b>2 buildings at the same time</b>.<br>Synergies appear once you have <b>15</b> of both buildings.<q>The many beats the few.</q>',2525,[10,20]);Game.last.pool='prestige';Game.last.parents=['Satan','Dominions'];
+		new Game.Upgrade('Synergies Vol. II','Débloque a new tier of upgrades that affect <b>2 buildings at the same time</b>.<br>Synergies appear once you have <b>75</b> of both buildings.<q>The several beats the many.</q>',252525,[10,20]);Game.last.pool='prestige';Game.last.parents=['Beelzebub','Seraphim','Synergies Vol. I'];
 		
 		//end of upgrades
 		
@@ -7167,65 +7166,65 @@ Game.Launch=function()
 		Game.CpsAchievement('Let\'s never bake again');
 		
 		order=30010;
-		new Game.Achievement('Sacrifice','Ascend with <b>1 million</b> cookies baked.<q>Easy come, easy go.</q>',[11,6]);
-		new Game.Achievement('Oblivion','Ascend with <b>1 billion</b> cookies baked.<q>Back to square one.</q>',[11,6]);
-		new Game.Achievement('From scratch','Ascend with <b>1 trillion</b> cookies baked.<q>It\'s been fun.</q>',[11,6]);
+		new Game.Achievement('Sacrifice','Descendre en enfer avec <b>1 million</b> de cookies.<q>Easy come, easy go.</q>',[11,6]);
+		new Game.Achievement('Oblivion','Descendre en enfer avec <b>1 milliard</b> de cookies.<q>Back to square one.</q>',[11,6]);
+		new Game.Achievement('From scratch','Descendre en enfer avec <b>1 billion</b> de cookies.<q>It\'s been fun.</q>',[11,6]);
 		
 		order=11010;
-		new Game.Achievement('Neverclick','Make <b>1 million</b> cookies by only having clicked <b>15 times</b>.',[12,0]);//Game.last.pool='shadow';
+		new Game.Achievement('Neverclick','Faire <b>1 million</b> de cookies en ne cliquant que <b>15 fois</b>.',[12,0]);//Game.last.pool='shadow';
 		order=1000;
-		new Game.Achievement('Clicktastic','Make <b>1,000</b> cookies from clicking.',[11,0]);
-		new Game.Achievement('Clickathlon','Make <b>100,000</b> cookies from clicking.',[11,1]);
-		new Game.Achievement('Clickolympics','Make <b>10,000,000</b> cookies from clicking.',[11,2]);
-		new Game.Achievement('Clickorama','Make <b>1,000,000,000</b> cookies from clicking.',[11,13]);
+		new Game.Achievement('Clicktastic','Faire <b>1,000</b> cookies en cliquant.',[11,0]);
+		new Game.Achievement('Clickathlon','Faire <b>100,000</b> cookies en cliquant.',[11,1]);
+		new Game.Achievement('Clickolympics','Faire <b>10,000,000</b> cookies en cliquant.',[11,2]);
+		new Game.Achievement('Clickorama','Faire <b>1,000,000,000</b> cookies en cliquant.',[11,13]);
 		
 		order=1050;
-		new Game.Achievement('Click','Have <b>1</b> cursor.',[0,0]);
-		new Game.Achievement('Double-click','Have <b>2</b> cursors.',[0,6]);
-		new Game.Achievement('Mouse wheel','Have <b>50</b> cursors.',[1,6]);
-		new Game.Achievement('Of Mice and Men','Have <b>100</b> cursors.',[0,1]);
-		new Game.Achievement('The Digital','Have <b>200</b> cursors.',[0,2]);
+		new Game.Achievement('Click','Avoir <b>1</b> curseurs.',[0,0]);
+		new Game.Achievement('Double-click','Avoir <b>2</b> curseurs.',[0,6]);
+		new Game.Achievement('Mouse wheel','Avoir <b>50</b> curseurs.',[1,6]);
+		new Game.Achievement('Of Mice and Men','Avoir <b>100</b> curseurs.',[0,1]);
+		new Game.Achievement('The Digital','Avoir <b>200</b> curseurs.',[0,2]);
 		
 		order=1100;
-		new Game.Achievement('Just wrong','Sell a grandma.<q>I thought you loved me.</q>',[10,9]);
-		new Game.TieredAchievement('Grandma\'s cookies','Have <b>1</b> grandma.','Grandma',1);
-		new Game.TieredAchievement('Sloppy kisses','Have <b>50</b> grandmas.','Grandma',2);
-		new Game.TieredAchievement('Retirement home','Have <b>100</b> grandmas.','Grandma',3);
+		new Game.Achievement('Tu es une personne horrible.','Vendre une grand-mère.<q>Je pensais que tu m\'aimais.</q>',[10,9]);
+		new Game.TieredAchievement('Grandma\'s cookies','Avoir <b>1</b> grand-mère.','Grandma',1);
+		new Game.TieredAchievement('Sloppy kisses','Avoir <b>50</b> grand-mères.','Grandma',2);
+		new Game.TieredAchievement('Retirement home','Avoir <b>100</b> grand-mères.','Grandma',3);
 		
 		order=1200;
-		new Game.TieredAchievement('My first farm','Have <b>1</b> farm.','Farm',1);
-		new Game.TieredAchievement('Reap what you sow','Have <b>50</b> farms.','Farm',2);
-		new Game.TieredAchievement('Farm ill','Have <b>100</b> farms.','Farm',3);
+		new Game.TieredAchievement('My first farm','Avoir <b>1</b> ferme.','Farm',1);
+		new Game.TieredAchievement('Reap what you sow','Avoir <b>50</b> fermes.','Farm',2);
+		new Game.TieredAchievement('Farm ill','Avoir <b>100</b> fermes.','Farm',3);
 		
 		order=1400;
-		new Game.TieredAchievement('Production chain','Have <b>1</b> factory.','Factory',1);
-		new Game.TieredAchievement('Industrial revolution','Have <b>50</b> factories.','Factory',2);
-		new Game.TieredAchievement('Global warming','Have <b>100</b> factories.','Factory',3);
+		new Game.TieredAchievement('Production chain','Avoir <b>1</b> usine.','Factory',1);
+		new Game.TieredAchievement('Industrial revolution','Avoir <b>50</b> usines.','Factory',2);
+		new Game.TieredAchievement('Global warming','Avoir <b>100</b> usines.','Factory',3);
 		
 		order=1300;
-		new Game.TieredAchievement('You know the drill','Have <b>1</b> mine.','Mine',1);
-		new Game.TieredAchievement('Excavation site','Have <b>50</b> mines.','Mine',2);
-		new Game.TieredAchievement('Hollow the planet','Have <b>100</b> mines.','Mine',3);
+		new Game.TieredAchievement('You know the drill','Avoir <b>1</b> mine.','Mine',1);
+		new Game.TieredAchievement('Excavation site','Avoir <b>50</b> mines.','Mine',2);
+		new Game.TieredAchievement('Hollow the planet','Avoir <b>100</b> mines.','Mine',3);
 		
 		order=1500;
-		new Game.TieredAchievement('Expedition','Have <b>1</b> shipment.','Shipment',1);
-		new Game.TieredAchievement('Galactic highway','Have <b>50</b> shipments.','Shipment',2);
-		new Game.TieredAchievement('Far far away','Have <b>100</b> shipments.','Shipment',3);
+		new Game.TieredAchievement('Expedition','Avoir <b>1</b> base d\'expédition.','Shipment',1);
+		new Game.TieredAchievement('Galactic highway','Avoir <b>50</b> bases d\'expédition.','Shipment',2);
+		new Game.TieredAchievement('Far far away','Avoir <b>100</b> bases d\'expédition.','Shipment',3);
 		
 		order=1600;
-		new Game.TieredAchievement('Transmutation','Have <b>1</b> alchemy lab.','Alchemy lab',1);
-		new Game.TieredAchievement('Transmogrification','Have <b>50</b> alchemy labs.','Alchemy lab',2);
-		new Game.TieredAchievement('Gold member','Have <b>100</b> alchemy labs.','Alchemy lab',3);
+		new Game.TieredAchievement('Transmutation','Avoir <b>1</b> labo d\'alchimie.','Alchemy lab',1);
+		new Game.TieredAchievement('Transmogrification','Avoir <b>50</b> labos d\'alchimie.','Alchemy lab',2);
+		new Game.TieredAchievement('Gold member','Avoir <b>100</b> labos d\'alchimie.','Alchemy lab',3);
 		
 		order=1700;
-		new Game.TieredAchievement('A whole new world','Have <b>1</b> portal.','Portal',1);
-		new Game.TieredAchievement('Now you\'re thinking','Have <b>50</b> portals.','Portal',2);
-		new Game.TieredAchievement('Dimensional shift','Have <b>100</b> portals.','Portal',3);
+		new Game.TieredAchievement('A whole new world','Avoir <b>1</b> portal.','Portal',1);
+		new Game.TieredAchievement('Now you\'re thinking','Avoir <b>50</b> portals.','Portal',2);
+		new Game.TieredAchievement('Dimensional shift','Avoir <b>100</b> portals.','Portal',3);
 		
 		order=1800;
-		new Game.TieredAchievement('Time warp','Have <b>1</b> time machine.','Time machine',1);
-		new Game.TieredAchievement('Alternate timeline','Have <b>50</b> time machines.','Time machine',2);
-		new Game.TieredAchievement('Rewriting history','Have <b>100</b> time machines.','Time machine',3);
+		new Game.TieredAchievement('Time warp','Avoir <b>1</b> time machine.','Time machine',1);
+		new Game.TieredAchievement('Alternate timeline','Avoir <b>50</b> time machines.','Time machine',2);
+		new Game.TieredAchievement('Rewriting history','Avoir <b>100</b> time machines.','Time machine',3);
 		
 		
 		order=7000;
@@ -7276,7 +7275,7 @@ Game.Launch=function()
 		new Game.Achievement('Black cat\'s paw','Click <b>7777 golden cookies</b>.',[26,6]);
 		
 		order=30050;
-		new Game.Achievement('Nihilism','Ascend with <b>1 quadrillion</b> cookies baked.<q>There are many things<br>that need to be erased</q>',[11,7]);
+		new Game.Achievement('Nihilism','Descendre en enfer avec <b>1 quadrillion</b> cookies baked.<q>There are many things<br>that need to be erased</q>',[11,7]);
 		
 		order=1900;
 		new Game.TieredAchievement('Antibatter','Have <b>1</b> antimatter condenser.','Antimatter condenser',1);
@@ -7287,7 +7286,7 @@ Game.Launch=function()
 		new Game.Achievement('Upgrader','Purchase <b>100</b> upgrades.',[9,2]);
 		
 		order=7000;
-		new Game.Achievement('Centennial','Have at least <b>100 of everything</b>.',[6,6]);
+		new Game.Achievement('Centennial','Have at least <b>100 de tout./b>.',[6,6]);
 		
 		order=30500;
 		new Game.Achievement('Hardcore','Get to <b>1 billion</b> cookies baked with <b>no upgrades purchased</b>.',[12,6]);//Game.last.pool='shadow';
@@ -7305,7 +7304,7 @@ Game.Launch=function()
 		var achiev=new Game.Achievement('Follow the white rabbit','Find and defeat the elusive <b>sugar bunny</b>.',[14,7]);Game.last.pool='dungeon';
 		
 		order=1000;
-		new Game.Achievement('Clickasmic','Make <b>100,000,000,000</b> cookies from clicking.',[11,14]);
+		new Game.Achievement('Clickasmic','Make <b>100,000,000,000</b> cookies en cliquant.',[11,14]);
 		
 		order=1100;
 		new Game.TieredAchievement('Friend of the ancients','Have <b>150</b> grandmas.','Grandma',4);
@@ -7361,13 +7360,13 @@ Game.Launch=function()
 		order=6000;
 		new Game.Achievement('Lord of Progress','Purchase <b>200</b> upgrades.<q>One can always do better. But should you?</q>',[9,14]);
 		order=7002;
-		new Game.Achievement('Bicentennial','Have at least <b>200 of everything</b>.<q>You crazy person.</q>',[8,6]);
+		new Game.Achievement('Bicentennial','Have at least <b>200 de tout./b>.<q>You crazy person.</q>',[8,6]);
 		
 		order=22300;
 		new Game.Achievement('Lovely cookies','Unlock <b>every Valentine-themed cookie</b>.',[20,3]);
 		
 		order=7001;
-		new Game.Achievement('Centennial and a half','Have at least <b>150 of everything</b>.',[7,6]);
+		new Game.Achievement('Centennial and a half','Have at least <b>150 de tout./b>.',[7,6]);
 		
 		order=11000;
 		new Game.Achievement('Tiny cookie','Click the tiny cookie.<q>These aren\'t the cookies<br>you\'re clicking for.</q>',[0,5]);
@@ -7400,8 +7399,8 @@ Game.Launch=function()
 		
 		
 		order=1000;
-		new Game.Achievement('Clickageddon','Make <b>10,000,000,000,000</b> cookies from clicking.',[11,15]);
-		new Game.Achievement('Clicknarok','Make <b>1,000,000,000,000,000</b> cookies from clicking.',[11,16]);
+		new Game.Achievement('Clickageddon','Make <b>10,000,000,000,000</b> cookies en cliquant.',[11,15]);
+		new Game.Achievement('Clicknarok','Make <b>1,000,000,000,000,000</b> cookies en cliquant.',[11,16]);
 		
 		order=1050;
 		new Game.Achievement('Extreme polydactyly','Have <b>300</b> cursors.',[0,13]);
@@ -7423,11 +7422,11 @@ Game.Launch=function()
 		new Game.Achievement('Third-party','Use an <b>add-on</b>.<q>Some find vanilla to be the most boring flavor.</q>',[16,5]);Game.last.pool='shadow';//if you're making a mod, add a Game.Win('Third-party') somewhere in there!
 		
 		order=30050;
-		new Game.Achievement('Dematerialize','Ascend with <b>1 quintillion</b> cookies baked.<q>Presto!<br>...where\'d the cookies go?</q>',[11,7]);
-		new Game.Achievement('Nil zero zilch','Ascend with <b>1 sextillion</b> cookies baked.<q>To summarize : really not very much at all.</q>',[11,7]);
-		new Game.Achievement('Transcendence','Ascend with <b>1 septillion</b> cookies baked.<q>Your cookies are now on a higher plane of being.</q>',[11,8]);
-		new Game.Achievement('Obliterate','Ascend with <b>1 octillion</b> cookies baked.<q>Resistance is futile, albeit entertaining.</q>',[11,8]);
-		new Game.Achievement('Negative void','Ascend with <b>1 nonillion</b> cookies baked.<q>You now have so few cookies that it\'s almost like you have a negative amount of them.</q>',[11,8]);
+		new Game.Achievement('Dematerialize','Descendre en enfer avec <b>1 quintillion</b> cookies baked.<q>Presto!<br>...where\'d the cookies go?</q>',[11,7]);
+		new Game.Achievement('Nil zero zilch','Descendre en enfer avec <b>1 sextillion</b> cookies baked.<q>To summarize : really not very much at all.</q>',[11,7]);
+		new Game.Achievement('Transcendence','Descendre en enfer avec <b>1 septillion</b> cookies baked.<q>Your cookies are now on a higher plane of being.</q>',[11,8]);
+		new Game.Achievement('Obliterate','Descendre en enfer avec <b>1 octillion</b> cookies baked.<q>Resistance is futile, albeit entertaining.</q>',[11,8]);
+		new Game.Achievement('Negative void','Descendre en enfer avec <b>1 nonillion</b> cookies baked.<q>You now have so few cookies that it\'s almost like you have a negative amount of them.</q>',[11,8]);
 		
 		order=22400;
 		new Game.Achievement('The hunt is on','Unlock <b>1 egg</b>.',[1,12]);
@@ -7551,14 +7550,14 @@ Game.Launch=function()
 		Game.CpsAchievement('Fast');Game.last.baseDesc+='<q>Wow!</q>';Game.last.desc=BeautifyInText(Game.last.baseDesc);
 		
 		order=7002;
-		new Game.Achievement('Bicentennial and a half','Have at least <b>250 of everything</b>.<q>Keep on truckin\'.</q>',[9,6]);
+		new Game.Achievement('Bicentennial and a half','Have at least <b>250 de tout./b>.<q>Keep on truckin\'.</q>',[9,6]);
 		
 		order=11000;
 		new Game.Achievement('Tabloid addiction','Click on the news ticker <b>50 times</b>.<q>Page 6 : Mad individual clicks on picture of pastry in a futile attempt to escape boredom!<br>Also page 6 : British parliament ate my baby!</q>',[27,7]);
 		
 		order=1000;
-		new Game.Achievement('Clickastrophe','Make <b>100,000,000,000,000,000</b> cookies from clicking.',[11,17]);
-		new Game.Achievement('Clickataclysm','Make <b>10,000,000,000,000,000,000</b> cookies from clicking.',[11,18]);
+		new Game.Achievement('Clickastrophe','Make <b>100,000,000,000,000,000</b> cookies en cliquant.',[11,17]);
+		new Game.Achievement('Clickataclysm','Make <b>10,000,000,000,000,000,000</b> cookies en cliquant.',[11,18]);
 		
 		order=1050;
 		new Game.Achievement('Thumbs, phalanges, metacarpals','Have <b>500</b> cursors.<q>& KNUCKLES</q>',[0,15]);
@@ -7569,7 +7568,7 @@ Game.Launch=function()
 		new Game.Achievement('The elder scrolls','Own a combined <b>777</b> grandmas and cursors.<q>Let me guess. Someone stole your cookie.</q>',[10,9]);
 		
 		order=30050;
-		new Game.Achievement('To crumbs, you say?','Ascend with <b>1 decillion</b> cookies baked.<q>Very well then.</q>',[29,6]);
+		new Game.Achievement('To crumbs, you say?','Descendre en enfer avec <b>1 decillion</b> cookies baked.<q>Very well then.</q>',[29,6]);
 		
 		order=1200;new Game.TieredAchievement('Seedy business','Have <b>300</b> farms.','Farm',7);
 		order=1300;new Game.TieredAchievement('Freak fracking','Have <b>300</b> mines.','Mine',7);
@@ -7814,7 +7813,7 @@ Game.Launch=function()
 							//if (Math.random()<(Game.HasAchiev('Spooky cookies')?0.2:0.05))//halloween cookie drops
 							var failRate=0.95;
 							if (Game.HasAchiev('Spooky cookies')) failRate=0.8;
-							if (Game.Has('Santa\'s bottomless bag')) failRate*=0.9;
+							if (Game.Has('Le sac sans fond du Père Noël')) failRate*=0.9;
 							if (Game.hasAura('Mind Over Matter')) failRate*=0.75;
 							if (Game.Has('Starterror')) failRate*=0.9;
 							if (me.type==1) failRate*=0.9;
@@ -7980,7 +7979,7 @@ Game.Launch=function()
 		}
 		
 		Game.santaLevels=['Festive test tube','Festive ornament','Festive wreath','Festive tree','Festive present','Festive elf fetus','Elf toddler','Elfling','Young elf','Bulky elf','Nick','Santa Claus','Elder Santa','True Santa','Final Claus'];
-		Game.santaDrops=['Increased merriness','Improved jolliness','A lump of coal','An itchy sweater','Reindeer baking grounds','Weighted sleighs','Ho ho ho-flavored frosting','Season savings','Toy workshop','Naughty list','Santa\'s bottomless bag','Santa\'s helpers','Santa\'s legacy','Santa\'s milk and cookies'];
+		Game.santaDrops=['Increased merriness','Improved jolliness','A lump of coal','An itchy sweater','Reindeer baking grounds','Weighted sleighs','Ho ho ho-flavored frosting','Season savings','Toy workshop','Naughty list','Le sac sans fond du Père Noël','Les bénévoles du Père Noël','L\'héritage du Père Noël','Le lait et les cookies du Père Noël'];
 		for (var i in Game.santaDrops)//scale christmas upgrade prices with santa level
 		{Game.Upgrades[Game.santaDrops[i]].priceFunc=function(){return Math.pow(3,Game.santaLevel)*2525;}}
 		
@@ -8057,11 +8056,11 @@ Game.Launch=function()
 				cost:function(){return Game.Objects['Mine'].amount>=100;},
 				buy:function(){Game.Objects['Mine'].sacrifice(100);},
 				costStr:function(){return '100 mines';}},
-			{name:'Krumblor, cookie dragon',action:'Train Master of the Armory<br><small>Aura : all upgrades are 2% cheaper</small>',pic:5,
+			{name:'Krumblor, cookie dragon',action:'Train Master of the Armory<br><small>Aura : Toutes les augmentations sont 2% cheaper</small>',pic:5,
 				cost:function(){return Game.Objects['Factory'].amount>=100;},
 				buy:function(){Game.Objects['Factory'].sacrifice(100);},
 				costStr:function(){return '100 factories';}},
-			{name:'Krumblor, cookie dragon',action:'Train Fierce Hoarder<br><small>Aura : all buildings are 2% cheaper</small>',pic:5,
+			{name:'Krumblor, cookie dragon',action:'Train Fierce Hoarder<br><small>Aura : Tous les bâtiments sont 2% cheaper</small>',pic:5,
 				cost:function(){return Game.Objects['Bank'].amount>=100;},
 				buy:function(){Game.Objects['Bank'].sacrifice(100);},
 				costStr:function(){return '100 banks';}},
@@ -8085,7 +8084,7 @@ Game.Launch=function()
 				cost:function(){return Game.Objects['Portal'].amount>=100;},
 				buy:function(){Game.Objects['Portal'].sacrifice(100);},
 				costStr:function(){return '100 portals';}},
-			{name:'Krumblor, cookie dragon',action:'Train Epoch Manipulator<br><small>Aura : golden cookie effects last 5% longer</small>',pic:5,
+			{name:'Krumblor, cookie dragon',action:'Train Epoch Manipulator<br><small>Aura : les effets des cookies dorés durent 5% longer</small>',pic:5,
 				cost:function(){return Game.Objects['Time machine'].amount>=100;},
 				buy:function(){Game.Objects['Time machine'].sacrifice(100);},
 				costStr:function(){return '100 time machines';}},
@@ -8093,7 +8092,7 @@ Game.Launch=function()
 				cost:function(){return Game.Objects['Antimatter condenser'].amount>=100;},
 				buy:function(){Game.Objects['Antimatter condenser'].sacrifice(100);},
 				costStr:function(){return '100 antimatter condensers';}},
-			{name:'Krumblor, cookie dragon',action:'Train Radiant Appetite<br><small>Aura : all cookie production multiplied by 2</small>',pic:5,
+			{name:'Krumblor, cookie dragon',action:'Train Radiant Appetite<br><small>Aura : all Production de cookie multiplied by 2</small>',pic:5,
 				cost:function(){return Game.Objects['Prism'].amount>=100;},
 				buy:function(){Game.Objects['Prism'].sacrifice(100);},
 				costStr:function(){return '100 prisms';}},
@@ -8115,8 +8114,8 @@ Game.Launch=function()
 			3:{name:'Elder Battalion',pic:[1,25],desc:'Grandmas gain <b>+1% CpS</b> for every non-grandma building.'},
 			4:{name:'Reaper of Fields',pic:[2,25],desc:'Golden cookies may trigger a <b>Dragon Harvest</b>.'},
 			5:{name:'Earth Shatterer',pic:[3,25],desc:'Buildings sell back for <b>85%</b> instead of 50%.'},
-			6:{name:'Master of the Armory',pic:[4,25],desc:'All upgrades are <b>2%</b> cheaper.'},
-			7:{name:'Fierce Hoarder',pic:[15,25],desc:'All buildings are <b>2%</b> cheaper.'},
+			6:{name:'Master of the Armory',pic:[4,25],desc:'Toutes les augmentations sont <b>2%</b> cheaper.'},
+			7:{name:'Fierce Hoarder',pic:[15,25],desc:'Tous les bâtiments sont <b>2%</b> cheaper.'},
 			8:{name:'Dragon God',pic:[16,25],desc:'Prestige CpS bonus <b>+5%</b>.'},
 			9:{name:'Arcane Aura',pic:[17,25],desc:'Les cookies dorés apparaissent <b>+5%</b> more often.'},
 			10:{name:'Dragonflight',pic:[5,25],desc:'Golden cookies may trigger a <b>Dragonflight</b>.'},
@@ -8124,7 +8123,7 @@ Game.Launch=function()
 			12:{name:'Unholy Dominion',pic:[7,25],desc:'Wrath cookies give <b>10%</b> more cookies.'},
 			13:{name:'Epoch Manipulator',pic:[8,25],desc:'Golden cookies last <b>5%</b> longer.'},
 			14:{name:'Mind Over Matter',pic:[13,25],desc:'Random drops are <b>25% more common</b>.'},
-			15:{name:'Radiant Appetite',pic:[14,25],desc:'All cookie production <b>multiplied by 2</b>.'},
+			15:{name:'Radiant Appetite',pic:[14,25],desc:'All Production de cookie <b>multiplied by 2</b>.'},
 		};
 		
 		Game.hasAura=function(what)
@@ -9333,10 +9332,10 @@ Game.Launch=function()
 				if (minAmount>=200) {Game.Win('Bicentennial');Game.Unlock('White chocolate butter biscuit');}
 				if (minAmount>=250) {Game.Win('Bicentennial and a half');Game.Unlock('Ruby chocolate butter biscuit');}
 				
-				if (Game.handmadeCookies>=1000) {Game.Win('Clicktastic');Game.Unlock('Plastic mouse');}
-				if (Game.handmadeCookies>=100000) {Game.Win('Clickathlon');Game.Unlock('Iron mouse');}
-				if (Game.handmadeCookies>=10000000) {Game.Win('Clickolympics');Game.Unlock('Titanium mouse');}
-				if (Game.handmadeCookies>=1000000000) {Game.Win('Clickorama');Game.Unlock('Adamantium mouse');}
+				if (Game.handmadeCookies>=1000) {Game.Win('Clicktastic');Game.Unlock('Souris en plastique');}
+				if (Game.handmadeCookies>=100000) {Game.Win('Clickathlon');Game.Unlock('Souris en fer');}
+				if (Game.handmadeCookies>=10000000) {Game.Win('Clickolympics');Game.Unlock('Souris en titanium');}
+				if (Game.handmadeCookies>=1000000000) {Game.Win('Clickorama');Game.Unlock('Souris en adamantium');}
 				if (Game.handmadeCookies>=100000000000) {Game.Win('Clickasmic');Game.Unlock('Unobtainium mouse');}
 				if (Game.handmadeCookies>=10000000000000) {Game.Win('Clickageddon');Game.Unlock('Eludium mouse');}
 				if (Game.handmadeCookies>=1000000000000000) {Game.Win('Clicknarok');Game.Unlock('Wishalloy mouse');}
