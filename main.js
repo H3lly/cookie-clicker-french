@@ -97,6 +97,7 @@ var numberFormatters =
 	formatEveryThirdPower([
 		'',
 		' million',
+		' milliard',
 		' billion',
 		' trillion',
 		' quadrillion',
@@ -115,6 +116,7 @@ var numberFormatters =
 	formatEveryThirdPower([
 		'',
 		' M',
+		' Md',
 		' B',
 		' T',
 		' Qa',
