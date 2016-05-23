@@ -5409,7 +5409,7 @@ Game.Launch=function()
 		},function(){
 			if (this.amount>=1) Game.Unlock(['Reinforced index finger','Carpal tunnel prevention cream']);
 			if (this.amount>=10) Game.Unlock('Ambidextrous');
-			if (this.amount>=20) Game.Unlock('Thousand fingers');
+			if (this.amount>=20) Game.Unlock('Un millier de doigts');
 			if (this.amount>=40) Game.Unlock('Un million de doigts');
 			if (this.amount>=80) Game.Unlock('Un milliard de doigts');
 			if (this.amount>=120) Game.Unlock('Un billion de doigts');
@@ -5429,35 +5429,35 @@ Game.Launch=function()
 				return grandmaIcons[Game.elderWrath];
 		},1,{pic:function(i){
 			var list=['grandma'];
-			if (Game.Has('Farmer grandmas')) list.push('farmerGrandma');
-			if (Game.Has('Worker grandmas')) list.push('workerGrandma');
-			if (Game.Has('Miner grandmas')) list.push('minerGrandma');
-			if (Game.Has('Cosmic grandmas')) list.push('cosmicGrandma');
-			if (Game.Has('Transmuted grandmas')) list.push('transmutedGrandma');
-			if (Game.Has('Altered grandmas')) list.push('alteredGrandma');
-			if (Game.Has('Grandmas\' grandmas')) list.push('grandmasGrandma');
-			if (Game.Has('Antigrandmas')) list.push('antiGrandma');
-			if (Game.Has('Rainbow grandmas')) list.push('rainbowGrandma');
-			if (Game.Has('Banker grandmas')) list.push('bankGrandma');
-			if (Game.Has('Priestess grandmas')) list.push('templeGrandma');
-			if (Game.Has('Witch grandmas')) list.push('witchGrandma');
+			if (Game.Has('Grand-mères fermières')) list.push('farmerGrandma');
+			if (Game.Has('Grand-mères ouvrières')) list.push('workerGrandma');
+			if (Game.Has('Grand-mères minières')) list.push('minerGrandma');
+			if (Game.Has('Grand-mères cosmiques')) list.push('cosmicGrandma');
+			if (Game.Has('Grand-mères transmutées')) list.push('transmutedGrandma');
+			if (Game.Has('Grand-mères alterées')) list.push('alteredGrandma');
+			if (Game.Has('Grand-mères de grand-mères')) list.push('grandmasGrandma');
+			if (Game.Has('Anti-grand-mères')) list.push('antiGrandma');
+			if (Game.Has('Grand-mères arc-en-ciel')) list.push('rainbowGrandma');
+			if (Game.Has('Grand-mères banquières')) list.push('bankGrandma');
+			if (Game.Has('Grand-mères prêtresses')) list.push('templeGrandma');
+			if (Game.Has('Grand-mères sorcières')) list.push('witchGrandma');
 			if (Game.season=='christmas') list.push('elfGrandma');
 			if (Game.season=='easter') list.push('bunnyGrandma');
 			return choose(list)+'.png';
 		},bg:'grandmaBackground.png',xV:8,yV:8,w:32,rows:3,x:0,y:16},100,function(me){
 			var mult=1;
-			if (Game.Has('Farmer grandmas')) mult*=2;
-			if (Game.Has('Worker grandmas')) mult*=2;
-			if (Game.Has('Miner grandmas')) mult*=2;
-			if (Game.Has('Cosmic grandmas')) mult*=2;
-			if (Game.Has('Transmuted grandmas')) mult*=2;
-			if (Game.Has('Altered grandmas')) mult*=2;
-			if (Game.Has('Grandmas\' grandmas')) mult*=2;
-			if (Game.Has('Antigrandmas')) mult*=2;
-			if (Game.Has('Rainbow grandmas')) mult*=2;
-			if (Game.Has('Banker grandmas')) mult*=2;
-			if (Game.Has('Priestess grandmas')) mult*=2;
-			if (Game.Has('Witch grandmas')) mult*=2;
+			if (Game.Has('Grand-mères fermières')) mult*=2;
+			if (Game.Has('Grand-mères ouvrières')) mult*=2;
+			if (Game.Has('Grand-mères minières')) mult*=2;
+			if (Game.Has('Grand-mères cosmiques')) mult*=2;
+			if (Game.Has('Grand-mères transmutées')) mult*=2;
+			if (Game.Has('Grand-mères alterées')) mult*=2;
+			if (Game.Has('Grand-mères de grand-mères')) mult*=2;
+			if (Game.Has('Anti-grand-mères')) mult*=2;
+			if (Game.Has('Grand-mères arc-en-ciel')) mult*=2;
+			if (Game.Has('Grand-mères banquières')) mult*=2;
+			if (Game.Has('Grand-mères prêtresses')) mult*=2;
+			if (Game.Has('Grand-mères sorcières')) mult*=2;
 			if (Game.Has('Bingo center/Research facility')) mult*=4;
 			if (Game.Has('Ritual rolling pins')) mult*=2;
 			if (Game.Has('Naughty list')) mult*=2;
@@ -5489,125 +5489,125 @@ Game.Launch=function()
 		};
 		
 		
-		new Game.Object('Farm','farm|farms|harvested','Grows cookie plants from cookie seeds.','farmIcon',2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
+		new Game.Object('Farm','ferme|fermes|récolté(s)','Fait pousser des plants de cookies grace à des graines de cookie.','farmIcon',2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Farmer grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères fermières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Farmer grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères fermières');
 		});
 		
-		new Game.Object('Mine','mine|mines|mined','Mines out cookie dough and chocolate chips.','mineIcon',3,{base:'mine',xV:16,yV:16,w:64,rows:2,x:0,y:24},10000,function(me){
+		new Game.Object('Mine','mine|mines|miné(s)','Mine de la pâte à cookie et des chips de chocolats.','mineIcon',3,{base:'mine',xV:16,yV:16,w:64,rows:2,x:0,y:24},10000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Miner grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères minières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Miner grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères minières');
 		});
 		
 		new Game.Object('Factory','factory|factories|mass-produced','Produces large quantities of cookies.','factoryIcon',4,{base:'factory',xV:8,yV:0,w:64,rows:1,x:0,y:-22},3000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Worker grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères ouvrières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Worker grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères ouvrières');
 		});
 		
 		new Game.Object('Bank','bank|banks|banked','Generates cookies from interest.','bankIcon',15,{base:'bank',xV:8,yV:4,w:56,rows:1,x:0,y:13},0,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Banker grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères banquières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Banker grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères banquières');
 		});
 		
 		new Game.Object('Temple','temple|temples|discovered','Full of precious, ancient chocolate.','templeIcon',16,{base:'temple',xV:8,yV:4,w:72,rows:2,x:0,y:-5},0,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Priestess grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères prêtresses')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Priestess grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères prêtresses');
 		});
 		
 		new Game.Object('Wizard tower','wizard tower|wizard towers|summoned','Summons cookies with magic spells.','wizardtowerIcon',17,{base:'wizardtower',xV:16,yV:16,w:48,rows:2,x:0,y:20},0,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Witch grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères sorcières')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Witch grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères sorcières');
 		});
 		
 		new Game.Object('Shipment','shipment|shipments|shipped','Brings in fresh cookies from the cookie planet.','shipmentIcon',5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Cosmic grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères cosmiques')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Cosmic grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères cosmiques');
 		});
 		
 		new Game.Object('Alchemy lab','alchemy lab|alchemy labs|transmuted','Turns gold into cookies!','alchemylabIcon',6,{base:'alchemylab',xV:16,yV:16,w:64,rows:2,x:0,y:16},200000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Transmuted grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères transmutées')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Transmuted grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères transmutées');
 		});
 		
 		new Game.Object('Portal','portal|portals|retrieved','Opens a door to the Cookieverse.','portalIcon',7,{base:'portal',xV:32,yV:32,w:64,rows:2,x:0,y:0},1666666,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Altered grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères alterées')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Altered grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères alterées');
 		});
 		
 		new Game.Object('Time machine','time machine|time machines|recovered','Brings cookies from the past, before they were even eaten.','timemachineIcon',8,{base:'timemachine',xV:32,yV:32,w:64,rows:1,x:0,y:0},123456789,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Grandmas\' grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères de grand-mères')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grandmas\' grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères de grand-mères');
 		});
 		
 		new Game.Object('Antimatter condenser','antimatter condenser|antimatter condensers|condensed','Condenses the antimatter in the universe into cookies.','antimattercondenserIcon',13,{base:'antimattercondenser',xV:0,yV:64,w:64,rows:1,x:0,y:0},3999999999,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Antigrandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Anti-grand-mères')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Antigrandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Anti-grand-mères');
 		});
 		Game.last.displayName='<span style="font-size:65%;position:relative;bottom:4px;">Antimatter condenser</span>';//shrink the name since it's so large
 		
 		new Game.Object('Prism','prism|prisms|converted','Converts light itself into cookies.','prismIcon',14,{base:'prism',xV:16,yV:4,w:64,rows:1,x:0,y:20},75000000000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
-			if (Game.Has('Rainbow grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
+			if (Game.Has('Grand-mères arc-en-ciel')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Rainbow grandmas');
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock('Grand-mères arc-en-ciel');
 		});
 		
 		Game.foolObjects={
@@ -6073,7 +6073,7 @@ Game.Launch=function()
 		new Game.Upgrade('Index renforcé','The mouse and cursors are <b>twice</b> as efficient.<q>prod prod</q>',100,[0,0]);
 		new Game.Upgrade('Carpal tunnel prevention cream','The mouse and cursors are <b>twice</b> as efficient.<q>it... it hurts to click...</q>',500,[0,1]);
 		new Game.Upgrade('Ambidextrous','The mouse and cursors are <b>twice</b> as efficient.<q>Look ma, both hands!</q>',10000,[0,2])
-		new Game.Upgrade('Thousand fingers','The mouse and cursors gain <b>+0.1</b> cookies for each non-cursor object owned.<q>clickity</q>',100000,[0,13]);
+		new Game.Upgrade('Un millier de doigts','The mouse and cursors gain <b>+0.1</b> cookies for each non-cursor object owned.<q>clickity</q>',100000,[0,13]);
 		new Game.Upgrade('Un million de doigts','The mouse and cursors gain <b>+0.5</b> cookies for each non-cursor object owned.<q>clickityclickity</q>',10000000,[0,14]);
 		new Game.Upgrade('Un milliard de doigts','The mouse and cursors gain <b>+5</b> cookies for each non-cursor object owned.<q>clickityclickityclickity</q>',100000000,[0,15]);
 		new Game.Upgrade('Un billion de doigts','The mouse and cursors gain <b>+50</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickity</q>',1000000000,[0,16]);
@@ -6172,14 +6172,14 @@ Game.Launch=function()
 		}
 		
 		order=250;
-		new Game.Upgrade('Farmer grandmas',Game.getGrandmaSynergyUpgradeDesc('Farm')+'<q>Un gentil fermier pour faire encore plus de cookies.</q>',Game.Objects['Farm'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
-		new Game.Upgrade('Miner grandmas',Game.getGrandmaSynergyUpgradeDesc('Mine')+'<q>A nice miner to dig more cookies.</q>',Game.Objects['Mine'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
-		new Game.Upgrade('Worker grandmas',Game.getGrandmaSynergyUpgradeDesc('Factory')+'<q>A nice worker to manufacture more cookies.</q>',Game.Objects['Factory'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères fermières',Game.getGrandmaSynergyUpgradeDesc('Farm')+'<q>Un gentil fermier pour faire encore plus de cookies.</q>',Game.Objects['Farm'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères minières',Game.getGrandmaSynergyUpgradeDesc('Mine')+'<q>A nice miner to dig more cookies.</q>',Game.Objects['Mine'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères ouvrières',Game.getGrandmaSynergyUpgradeDesc('Factory')+'<q>A nice worker to manufacture more cookies.</q>',Game.Objects['Factory'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		order=255;
-		new Game.Upgrade('Cosmic grandmas',Game.getGrandmaSynergyUpgradeDesc('Shipment')+'<q>A nice thing to... uh... cookies.</q>',Game.Objects['Shipment'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
-		new Game.Upgrade('Transmuted grandmas',Game.getGrandmaSynergyUpgradeDesc('Alchemy lab')+'<q>A nice golden grandma to convert into more cookies.</q>',Game.Objects['Alchemy lab'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
-		new Game.Upgrade('Altered grandmas',Game.getGrandmaSynergyUpgradeDesc('Portal')+'<q>a NiCe GrAnDmA tO bA##########</q>',Game.Objects['Portal'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
-		new Game.Upgrade('Grandmas\' grandmas',Game.getGrandmaSynergyUpgradeDesc('Time machine')+'<q>Une gentille grand-mère de grand-mère pour faire deux fois plus de cookies.</q>',Game.Objects['Time machine'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères cosmiques',Game.getGrandmaSynergyUpgradeDesc('Shipment')+'<q>A nice thing to... uh... cookies.</q>',Game.Objects['Shipment'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères transmutées',Game.getGrandmaSynergyUpgradeDesc('Alchemy lab')+'<q>A nice golden grandma to convert into more cookies.</q>',Game.Objects['Alchemy lab'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères alterées',Game.getGrandmaSynergyUpgradeDesc('Portal')+'<q>a NiCe GrAnDmA tO bA##########</q>',Game.Objects['Portal'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères de grand-mères',Game.getGrandmaSynergyUpgradeDesc('Time machine')+'<q>Une gentille grand-mère de grand-mère pour faire deux fois plus de cookies.</q>',Game.Objects['Time machine'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		
 		order=14000;
 		Game.baseResearchTime=Game.fps*60*30;
@@ -6298,7 +6298,7 @@ Game.Launch=function()
 		new Game.TieredUpgrade('Big bang bake','Antimatter condensers are <b>twice</b> as efficient.<q>And that\'s how it all began.</q>','Antimatter condenser',4);
 
 		order=255;
-		new Game.Upgrade('Antigrandmas',Game.getGrandmaSynergyUpgradeDesc('Antimatter condenser')+'<q>A mean antigrandma to vomit more cookies.<br>(Do not put in contact with normal grandmas; loss of matter may occur.)</q>',Game.Objects['Antimatter condenser'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Anti-grand-mères',Game.getGrandmaSynergyUpgradeDesc('Antimatter condenser')+'<q>A mean antigrandma to vomit more cookies.<br>(Do not put in contact with normal grandmas; loss of matter may occur.)</q>',Game.Objects['Antimatter condenser'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 
 		order=10020;
 		Game.NewUpgradeCookie({name:'Madeleines',desc:'Unforgettable!',icon:[12,3],power:																2,	price:	99999999999999*5});
@@ -6426,7 +6426,7 @@ Game.Launch=function()
 		new Game.TieredUpgrade('Pure cosmic light','Prisms are <b>twice</b> as efficient.<q>Your prisms now receive pristine, unadulterated photons from the other end of the universe.</q>','Prism',5);
 
 		order=255;
-		new Game.Upgrade('Rainbow grandmas',Game.getGrandmaSynergyUpgradeDesc('Prism')+'<q>A luminous grandma to sparkle into cookies.</q>',Game.Objects['Prism'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères arc-en-ciel',Game.getGrandmaSynergyUpgradeDesc('Prism')+'<q>A luminous grandma to sparkle into cookies.</q>',Game.Objects['Prism'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		
 		order=24000;
 		Game.seasonTriggerBasePrice=1111111111;
@@ -6578,9 +6578,9 @@ Game.Launch=function()
 		new Game.TieredUpgrade('Dark formulas','Wizard towers are <b>twice</b> as efficient.<q>Eldritch forces are at work behind these spells - you get the feeling you really shouldn\'t be messing with those. But I mean, free cookies, right?</q>','Wizard tower',6);
 
 		order=250;
-		new Game.Upgrade('Banker grandmas',Game.getGrandmaSynergyUpgradeDesc('Bank')+'<q>A nice banker to cash in more cookies.</q>',Game.Objects['Bank'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
-		new Game.Upgrade('Priestess grandmas',Game.getGrandmaSynergyUpgradeDesc('Temple')+'<q>A nice priestess to praise the one true Baker in the sky.</q>',Game.Objects['Temple'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
-		new Game.Upgrade('Witch grandmas',Game.getGrandmaSynergyUpgradeDesc('Wizard tower')+'<q>A nice witch to cast a zip, and a zoop, and poof! Cookies.</q>',Game.Objects['Wizard tower'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères banquières',Game.getGrandmaSynergyUpgradeDesc('Bank')+'<q>A nice banker to cash in more cookies.</q>',Game.Objects['Bank'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères prêtresses',Game.getGrandmaSynergyUpgradeDesc('Temple')+'<q>A nice priestess to praise the one true Baker in the sky.</q>',Game.Objects['Temple'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+		new Game.Upgrade('Grand-mères sorcières',Game.getGrandmaSynergyUpgradeDesc('Wizard tower')+'<q>A nice witch to cast a zip, and a zoop, and poof! Cookies.</q>',Game.Objects['Wizard tower'].basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
 		
 		
 		
@@ -9370,18 +9370,18 @@ Game.Launch=function()
 				if (Game.cookiesEarned>=10000000000000 && !Game.HasAchiev('You win a cookie')) {Game.Win('You win a cookie');Game.Earn(1);}
 				
 				var grandmas=0;
-				if (Game.Has('Farmer grandmas')) grandmas++;
-				if (Game.Has('Worker grandmas')) grandmas++;
-				if (Game.Has('Miner grandmas')) grandmas++;
-				if (Game.Has('Cosmic grandmas')) grandmas++;
-				if (Game.Has('Transmuted grandmas')) grandmas++;
-				if (Game.Has('Altered grandmas')) grandmas++;
-				if (Game.Has('Grandmas\' grandmas')) grandmas++;
-				if (Game.Has('Antigrandmas')) grandmas++;
-				if (Game.Has('Rainbow grandmas')) grandmas++;
-				if (Game.Has('Banker grandmas')) grandmas++;
-				if (Game.Has('Priestess grandmas')) grandmas++;
-				if (Game.Has('Witch grandmas')) grandmas++;
+				if (Game.Has('Grand-mères fermières')) grandmas++;
+				if (Game.Has('Grand-mères ouvrières')) grandmas++;
+				if (Game.Has('Grand-mères minières')) grandmas++;
+				if (Game.Has('Grand-mères cosmiques')) grandmas++;
+				if (Game.Has('Grand-mères transmutées')) grandmas++;
+				if (Game.Has('Grand-mères alterées')) grandmas++;
+				if (Game.Has('Grand-mères de grand-mères')) grandmas++;
+				if (Game.Has('Anti-grand-mères')) grandmas++;
+				if (Game.Has('Grand-mères arc-en-ciel')) grandmas++;
+				if (Game.Has('Grand-mères banquières')) grandmas++;
+				if (Game.Has('Grand-mères prêtresses')) grandmas++;
+				if (Game.Has('Grand-mères sorcières')) grandmas++;
 				if (!Game.HasAchiev('Elder') && grandmas>=7) Game.Win('Elder');
 				if (Game.Objects['Grandma'].amount>=6 && !Game.Has('Bingo center/Research facility') && Game.HasAchiev('Elder')) Game.Unlock('Bingo center/Research facility');
 				if (Game.pledges>0) Game.Win('Elder nap');
