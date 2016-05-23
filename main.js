@@ -10,6 +10,24 @@ http://orteil.dashnet.org
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
+//CAMILLE
+function loadTranslation(url, callback)
+{
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+    script.onreadystatechange = callback;
+    script.onload = callback;
+
+    head.appendChild(script);
+}
+
+loadScript("translation.js", french);
+
+
+
+
 function l(what) {return document.getElementById(what);}
 function choose(arr) {return arr[Math.floor(Math.random()*arr.length)];}
 
@@ -19,7 +37,7 @@ function replaceAll(find,replace,str){return str.replace(new RegExp(escapeRegExp
 //disable sounds coming from soundjay.com (sorry)
 var realAudio=Audio;//backup real audio
 Audio=function(src){
-	if (src.indexOf('soundjay')>-1) {Game.Popup('Sorry, no sounds hotlinked from soundjay.com.');this.play=function(){};}
+	if (src.indexOf('soundjay')>-1) {Game.Popup(SOUNDJAYHOTLINK);this.play=function(){};}
 	else return new realAudio(src);
 };
 
