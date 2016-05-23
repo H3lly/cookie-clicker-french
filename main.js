@@ -1055,7 +1055,7 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.RandomBakeryName=function()
 		{
-			return (Math.random()>0.05?(choose(['Magic','Fantastic','Fancy','Sassy','Snazzy','Pretty','Cute','Pirate','Ninja','Zombie','Robot','Radical','Urban','Cool','Hella','Sweet','Awful','Double','Triple','Turbo','Techno','Disco','Electro','Dancing','Wonder','Mutant','Space','Science','Medieval','Future','Captain','Bearded','Lovely','Tiny','Big','Fire','Water','Frozen','Metal','Plastic','Solid','Liquid','Moldy','Shiny','Happy','Happy Little','Slimy','Tasty','Delicious','Hungry','Greedy','Lethal','Professor','Doctor','Power','Chocolate','Crumbly','Choklit','Righteous','Glorious','Mnemonic','Psychic','Frenetic','Hectic','Crazy','Royal','El','Von'])+' '):'Mc')+choose(['Cookie','Biscuit','Muffin','Scone','Cupcake','Pancake','Chip','Sprocket','Gizmo','Puppet','Mitten','Sock','Teapot','Mystery','Baker','Cook','Grandma','Click','Clicker','Spaceship','Factory','Portal','Machine','Experiment','Monster','Panic','Burglar','Bandit','Booty','Potato','Pizza','Burger','Sausage','Meatball','Spaghetti','Macaroni','Kitten','Puppy','Giraffe','Zebra','Parrot','Dolphin','Duckling','Sloth','Turtle','Goblin','Pixie','Gnome','Computer','Pirate','Ninja','Zombie','Robot']);
+			return (Math.random()>0.05?(choose(['Magic','Fantastic','Fancy','Sassy','Snazzy','Pretty','Cute','Pirate','Ninja','Zombie','Robot','Radical','Urban','Cool','Hella','Sweet','Awful','Double','Triple','Turbo','Techno','Disco','Electro','Dancing','Wonder','Mutant','Space','Science','Medieval','Future','Captain','Bearded','Lovely','Tiny','Big','Fire','Water','Frozen','Metal','Plastic','Solid','Liquid','Moldy','Shiny','Happy','Happy Little','Slimy','Tasty','Delicious','Hungry','Greedy','Lethal','Professor','Doctor','Power','Chocolate','Crumbly','Choklit','Righteous','Glorious','Mnemonic','Psychic','Frenetic','Hectic','Crazy','Royal','El','Von'])+' '):'Mc')+choose(['Cookie','Biscuit','Muffin','Scone','Cupcake','Pancake','Chip','Sprocket','Gizmo','Puppet','Mitten','Sock','Teapot','Mystery','Baker','Cook','Grand-mère','Click','Clicker','Spaceship','Factory','Portal','Machine','Experiment','Monster','Panic','Burglar','Bandit','Booty','Potato','Pizza','Burger','Sausage','Meatball','Spaghetti','Macaroni','Kitten','Puppy','Giraffe','Zebra','Parrot','Dolphin','Duckling','Sloth','Turtle','Goblin','Pixie','Gnome','Computer','Pirate','Ninja','Zombie','Robot']);
 		}
 		Game.GetBakeryName=function() {return Game.RandomBakeryName();}
 		Game.bakeryName=Game.GetBakeryName();
@@ -1125,12 +1125,12 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.ExportSave=function()
 		{
-			Game.Prompt('<h3>Exporter la sauvegarde</h3><div class="block">C\'est votre code de sauvegarde.<br>Copiez/collez le dans un endroit et gardez le précieusement !</div><div class="block"><textarea id="textareaPrompt" style="width:100%;height:128px;" readonly>'+Game.WriteSave(1)+'</textarea></div>',['All done!']);//prompt('Copy this text and keep it somewhere safe!',Game.WriteSave(1));
+			Game.Prompt('<h3>Export save</h3><div class="block">This is your save code.<br>Copy it and keep it somewhere safe!</div><div class="block"><textarea id="textareaPrompt" style="width:100%;height:128px;" readonly>'+Game.WriteSave(1)+'</textarea></div>',['All done!']);//prompt('Copy this text and keep it somewhere safe!',Game.WriteSave(1));
 			l('textareaPrompt').focus();l('textareaPrompt').select();
 		}
 		Game.ImportSave=function()
 		{
-			Game.Prompt('<h3>Importer la sauvegarde</h3><div class="block">Collez le code que vous avez sauvegardé via l\'exportation.</div><div class="block"><textarea id="textareaPrompt" style="width:100%;height:128px;"></textarea></div>',[['Load','if (l(\'textareaPrompt\').value.length>0) {Game.ImportSaveCode(l(\'textareaPrompt\').value);Game.ClosePrompt();}'],'Nevermind']);//prompt('Please paste in the text that was given to you on save export.','');
+			Game.Prompt('<h3>Import save</h3><div class="block">Please paste in the code that was given to you on save export.</div><div class="block"><textarea id="textareaPrompt" style="width:100%;height:128px;"></textarea></div>',[['Load','if (l(\'textareaPrompt\').value.length>0) {Game.ImportSaveCode(l(\'textareaPrompt\').value);Game.ClosePrompt();}'],'Nevermind']);//prompt('Please paste in the text that was given to you on save export.','');
 			l('textareaPrompt').focus();
 		}
 		Game.ImportSaveCode=function(save)
@@ -1676,7 +1676,7 @@ Game.Launch=function()
 						if (Game.ascensionMode!=1)
 						{
 							if (Game.Has('Starter kit')) Game.Objects['Cursor'].free=10;
-							if (Game.Has('Starter kitchen')) Game.Objects['Grandma'].free=5;
+							if (Game.Has('Starter kitchen')) Game.Objects['Grand-mère'].free=5;
 						}
 						
 						Game.CalculateGains();
@@ -1870,7 +1870,7 @@ Game.Launch=function()
 					if (Game.Has('Season switcher')) {for (var i in Game.seasons) {Game.Unlock(Game.seasons[i].trigger);}}
 					
 					if (Game.Has('Starter kit')) Game.Objects['Cursor'].getFree(10);
-					if (Game.Has('Starter kitchen')) Game.Objects['Grandma'].getFree(5);
+					if (Game.Has('Starter kitchen')) Game.Objects['Grand-mère'].getFree(5);
 				}
 			}
 			
@@ -3319,31 +3319,31 @@ Game.Launch=function()
 					if (Math.random()<0.01 || nextMoni>=maxPayout)
 					{
 						me.chain=0;
-						popup=['Cookie chain : +'+moniStr+' cookies!<br>Cookie chain over. You made '+Beautify(me.total)+' cookies.','Cookie chain over','+<b>'+moniStr+'</b> cookies!<br>(Total : '+Beautify(me.total)+')'];
+						popup=['Chaîne de cookies : +'+moniStr+' cookies!<br>Chaîne de cookies terminée. Vous avez fait '+Beautify(me.total)+' cookies.','Chaîne de cookies terminée','+<b>'+moniStr+'</b> cookies!<br>(Total : '+Beautify(me.total)+')'];
 					}
 					else
 					{
-						popup=['Cookie chain : +'+moniStr+' cookies!','Cookie chain','+<b>'+moniStr+'</b> cookies!'];
+						popup=['Chaîne de cookies : +'+moniStr+' cookies!','Chaîne de cookies','+<b>'+moniStr+'</b> cookies!'];
 					}
 					Game.Earn(moni);
 				}
 				else if (choice=='blab')//sorry (it's really rare)
 				{
 					var str=choose([
-					'Cookie crumbliness x3 for 60 seconds!',
-					'Chocolatiness x7 for 77 seconds!',
-					'Dough elasticity halved for 66 seconds!',
-					'Golden cookie shininess doubled for 3 seconds!',
-					'World economy halved for 30 seconds!',
-					'Grandma kisses 23% stingier for 45 seconds!',
-					'Thanks for clicking!',
-					'Fooled you! This one was just a test.',
-					'Golden cookies clicked +1!',
-					'Your click has been registered. Thank you for your cooperation.',
-					'Thanks! That hit the spot!',
-					'Thank you. A team has been dispatched.',
-					'They know.',
-					'Oops. This was just a chocolate cookie with shiny aluminium foil.'
+					'Cookies x3 plus croustillants pendant 60 secondes!',
+					'C\'est x7 plus chocolaté pendant 77 secondes!',
+					'Pâte rendue plus elastique pendant for 66 secondes!',
+					'Brillance des cookies dorés doublées pendant 3 secondes!',
+					'L\'économie mondiale diminuée de 50% pendant 30 secondes !',
+					'Les bisous de mamie 23% plus collant pendant 45 secondes !',
+					'Merci d\'avoir cliqué !',
+					'Ah ah ! C\'était juste un test.',
+					'+1 cookie doré cliqué !',
+					'Votre clic a été enregistré. Merci de votre coopération.',
+					'Merci ! C\'est pile ce qu\'il faut.',
+					'Merci. Une équipe à été dissoute.',
+					'Ils savent.',
+					'Oups. C\'était juste un cookie au chocolat dans du papier d\'aluminium.'
 					]);
 					popup=[str,'???',str];
 				}
@@ -4003,9 +4003,9 @@ Game.Launch=function()
 				str+='<div class="section">Options</div>'+
 				'<div class="subsection">'+
 				'<div class="title">General</div>'+
-				'<div class="listing"><a class="option" '+Game.clickStr+'="Game.WriteSave();PlaySound(\'snd/tick.mp3\');">Save</a><label>Sauvegarder manuellement (the game autosaves every 60 seconds; shortcut : ctrl+S)</label></div>'+
-				'<div class="listing"><a class="option" '+Game.clickStr+'="Game.ExportSave();PlaySound(\'snd/tick.mp3\');">Exporter la sauvegarde</a><a class="option" '+Game.clickStr+'="Game.ImportSave();PlaySound(\'snd/tick.mp3\');">Import save</a><label>You can use this to backup your save or to transfer it to another computer (shortcut for import : ctrl+O)</label></div>'+
-				'<div class="listing"><a class="option" '+Game.clickStr+'="Game.FileSave();PlaySound(\'snd/tick.mp3\');">Sauvegarder vers un fichier</a><a class="option" style="position:relative;"><input id="FileLoadInput" type="file" style="cursor:pointer;opacity:0;position:absolute;left:0px;top:0px;width:100%;height:100%;" onchange="Game.FileLoad(event);" '+Game.clickStr+'="PlaySound(\'snd/tick.mp3\');"/>Load from file</a><label><b>Experimental</b> - use this to keep backups on your computer</label></div>'+
+				'<div class="listing"><a class="option" '+Game.clickStr+'="Game.WriteSave();PlaySound(\'snd/tick.mp3\');">Save</a><label>Save manually (the game autosaves every 60 seconds; shortcut : ctrl+S)</label></div>'+
+				'<div class="listing"><a class="option" '+Game.clickStr+'="Game.ExportSave();PlaySound(\'snd/tick.mp3\');">Export save</a><a class="option" '+Game.clickStr+'="Game.ImportSave();PlaySound(\'snd/tick.mp3\');">Import save</a><label>You can use this to backup your save or to transfer it to another computer (shortcut for import : ctrl+O)</label></div>'+
+				'<div class="listing"><a class="option" '+Game.clickStr+'="Game.FileSave();PlaySound(\'snd/tick.mp3\');">Save to file</a><a class="option" style="position:relative;"><input id="FileLoadInput" type="file" style="cursor:pointer;opacity:0;position:absolute;left:0px;top:0px;width:100%;height:100%;" onchange="Game.FileLoad(event);" '+Game.clickStr+'="PlaySound(\'snd/tick.mp3\');"/>Load from file</a><label><b>Experimental</b> - use this to keep backups on your computer</label></div>'+
 				
 				'<div class="listing"><a class="option warning" '+Game.clickStr+'="Game.HardReset();PlaySound(\'snd/tick.mp3\');">Wipe save</a><label>Delete all your progress, including your achievements</label></div>'+
 				'<div class="title">Settings</div>'+
@@ -4205,7 +4205,7 @@ Game.Launch=function()
 				(Game.resets?('<div class="listing"><b>Legacy started :</b> '+(fullDate==''?'just now':(fullDate+' ago'))+', with '+Beautify(Game.resets)+' ascension'+(Game.resets==1?'':'s')+'</div>'):'')+
 				'<div class="listing"><b>Run started :</b> '+(startDate==''?'just now':(startDate+' ago'))+'</div>'+
 				'<div class="listing"><b>Buildings owned :</b> '+Beautify(buildingsOwned)+'</div>'+
-				'<div class="listing"><b>Cookies par seconde :</b> '+Beautify(Game.cookiesPs,1)+' <small>'+
+				'<div class="listing"><b>Cookies per second :</b> '+Beautify(Game.cookiesPs,1)+' <small>'+
 					'(multiplier : '+Beautify(Math.round(Game.globalCpsMult*100),1)+'%)'+
 					(Game.cpsSucked>0?' <span class="warning">(withered : '+Beautify(Math.round(Game.cpsSucked*100),1)+'%)</span>':'')+
 					'</small></div>'+
@@ -5043,13 +5043,13 @@ Game.Launch=function()
 					desc='';
 					icon=[0,7];
 				}
-				//if (l('rowInfo'+me.id) && Game.drawT%10==0) l('rowInfoContent'+me.id).innerHTML='&bull; '+me.amount+' '+(me.amount==1?me.single:me.plural)+'<br>&bull; producing '+Beautify(me.storedTotalCps,1)+' '+(me.storedTotalCps==1?'cookie':'cookies')+' par seconde<br>&bull; total : '+Beautify(me.totalCookies)+' '+(Math.floor(me.totalCookies)==1?'cookie':'cookies')+' '+me.actionName;
+				//if (l('rowInfo'+me.id) && Game.drawT%10==0) l('rowInfoContent'+me.id).innerHTML='&bull; '+me.amount+' '+(me.amount==1?me.single:me.plural)+'<br>&bull; producing '+Beautify(me.storedTotalCps,1)+' '+(me.storedTotalCps==1?'cookie':'cookies')+' per second<br>&bull; total : '+Beautify(me.totalCookies)+' '+(Math.floor(me.totalCookies)==1?'cookie':'cookies')+' '+me.actionName;
 				return '<div style="min-width:350px;"><div class="icon" style="float:left;margin-left:-8px;margin-top:-8px;background-position:'+(-icon[0]*48)+'px '+(-icon[1]*48)+'px;"></div><div style="float:right;"><span class="price">'+Beautify(Math.round(me.price))+'</span></div><div class="name">'+name+'</div>'+'<small>[owned : '+me.amount+'</small>]'+(me.free>0?' <small>[free : '+me.free+'</small>!]':'')+
 				'<div class="line"></div><div class="description">'+desc+'</div>'+
 				(me.totalCookies>0?(
 					'<div class="line"></div><div class="data">'+
 					(me.amount>0?'&bull; chaque '+me.single+' produit <b>'+Beautify((me.storedTotalCps/me.amount)*Game.globalCpsMult,1)+'</b> '+((me.storedTotalCps/me.amount)*Game.globalCpsMult==1?'cookie':'cookies')+' par seconde<br>':'')+
-					'&bull; '+me.amount+' '+(me.amount==1?me.single:me.plural)+' produisant <b>'+Beautify(me.storedTotalCps*Game.globalCpsMult,1)+'</b> '+(me.storedTotalCps*Game.globalCpsMult==1?'cookie':'cookies')+' par seconde (<b>'+Beautify((me.amount>0?((me.storedTotalCps*Game.globalCpsMult)/Game.cookiesPs):0)*100,1)+'%</b> of total)<br>'+
+					'&bull; '+me.amount+' '+(me.amount==1?me.single:me.plural)+' produisant <b>'+Beautify(me.storedTotalCps*Game.globalCpsMult,1)+'</b> '+(me.storedTotalCps*Game.globalCpsMult==1?'cookie':'cookies')+' par seconde (<b>'+Beautify((me.amount>0?((me.storedTotalCps*Game.globalCpsMult)/Game.cookiesPs):0)*100,1)+'%</b> du total)<br>'+
 					'&bull; <b>'+Beautify(me.totalCookies)+'</b> '+(Math.floor(me.totalCookies)==1?'cookie':'cookies')+' '+me.actionName+' au total</div>'
 				):'')+
 				'</div>';
@@ -5489,7 +5489,7 @@ Game.Launch=function()
 		};
 		
 		
-		new Game.Object('Farm','ferme|fermes|recolté(es)','Fait pousser des plants de cookies grace à des graines de cookies.','farmIcon',2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
+		new Game.Object('Farm','farm|farms|harvested','Grows cookie plants from cookie seeds.','farmIcon',2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			if (Game.Has('Farmer grandmas')) mult*=Game.getGrandmaSynergyUpgradeMultiplier(me.name);
@@ -6073,10 +6073,10 @@ Game.Launch=function()
 		new Game.Upgrade('Reinforced index finger','The mouse and cursors are <b>twice</b> as efficient.<q>prod prod</q>',100,[0,0]);
 		new Game.Upgrade('Carpal tunnel prevention cream','The mouse and cursors are <b>twice</b> as efficient.<q>it... it hurts to click...</q>',500,[0,1]);
 		new Game.Upgrade('Ambidextrous','The mouse and cursors are <b>twice</b> as efficient.<q>Look ma, both hands!</q>',10000,[0,2])
-		new Game.Upgrade('Un millier de doigts','La souris et les curseurs gagnent <b>+0.1</b> cookies pour chaque object possedés n\'étant pas un curseur.<q>clickity</q>',100000,[0,13]);
-		new Game.Upgrade('Un million de doigts','La souris et les curseurs gagnent <b>+0.5</b> cookies pour chaque object possedés n\'étant pas un curseur.<q>clickityclickity</q>',10000000,[0,14]);
-		new Game.Upgrade('Un milliard de doigts','La souris et les curseurs gagnent <b>+5</b> cookies pour chaque object possedés n\'étant pas un curseur.<q>clickityclickityclickity</q>',100000000,[0,15]);
-		new Game.Upgrade('Un billion de doigts','La souris et les curseurs gagnent <b>+50</b> cookies pour chaque object possedés n\'étant pas un curseur.<q>clickityclickityclickityclickity</q>',1000000000,[0,16]);
+		new Game.Upgrade('Thousand fingers','The mouse and cursors gain <b>+0.1</b> cookies for each non-cursor object owned.<q>clickity</q>',100000,[0,13]);
+		new Game.Upgrade('Million fingers','The mouse and cursors gain <b>+0.5</b> cookies for each non-cursor object owned.<q>clickityclickity</q>',10000000,[0,14]);
+		new Game.Upgrade('Billion fingers','The mouse and cursors gain <b>+5</b> cookies for each non-cursor object owned.<q>clickityclickityclickity</q>',100000000,[0,15]);
+		new Game.Upgrade('Trillion fingers','The mouse and cursors gain <b>+50</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickity</q>',1000000000,[0,16]);
 		
 		order=200;
 		new Game.TieredUpgrade('Forwards from grandma','Grandmas are <b>twice</b> as efficient.<q>RE:RE:thought you\'d get a kick out of this ;))</q>','Grandma',1);
@@ -7113,7 +7113,7 @@ Game.Launch=function()
 		{
 			var threshold=Math.pow(10,Math.floor(Game.BankAchievements.length*1.5+2));
 			if (Game.BankAchievements.length==0) threshold=1;
-			var achiev=new Game.Achievement(name,'Fait <b>'+Beautify(threshold)+'</b> cookie'+(threshold==1?'':'s')+'.',[Game.thresholdIcons[Game.BankAchievements.length],5]);
+			var achiev=new Game.Achievement(name,'Bake <b>'+Beautify(threshold)+'</b> cookie'+(threshold==1?'':'s')+'.',[Game.thresholdIcons[Game.BankAchievements.length],5]);
 			achiev.threshold=threshold;
 			achiev.order=100+Game.BankAchievements.length*0.01;
 			Game.BankAchievements.push(achiev);
@@ -7124,7 +7124,7 @@ Game.Launch=function()
 		{
 			var threshold=Math.pow(10,Game.CpsAchievements.length);
 			//if (Game.CpsAchievements.length==0) threshold=1;
-			var achiev=new Game.Achievement(name,'Fait <b>'+Beautify(threshold)+'</b> cookie'+(threshold==1?'':'s')+' par seconde.',[Game.thresholdIcons[Game.CpsAchievements.length],5]);
+			var achiev=new Game.Achievement(name,'Bake <b>'+Beautify(threshold)+'</b> cookie'+(threshold==1?'':'s')+' per second.',[Game.thresholdIcons[Game.CpsAchievements.length],5]);
 			achiev.threshold=threshold;
 			achiev.order=200+Game.CpsAchievements.length*0.01;
 			Game.CpsAchievements.push(achiev);
@@ -9571,7 +9571,7 @@ Game.Launch=function()
 			if (str.length>11 && !Game.mobile) unit='<br>cookies';
 			str+=unit;
 			if (Game.prefs.monospace) str='<span class="monospace">'+str+'</span>';
-			str=str+'<div style="font-size:50%;"'+(Game.cpsSucked>0?' class="warning"':'')+'>par seconde : '+Beautify(Game.cookiesPs*(1-Game.cpsSucked),1)+'</div>';//display cookie amount
+			str=str+'<div style="font-size:50%;"'+(Game.cpsSucked>0?' class="warning"':'')+'>per second : '+Beautify(Game.cookiesPs*(1-Game.cpsSucked),1)+'</div>';//display cookie amount
 			l('cookies').innerHTML=str;
 			l('compactCookies').innerHTML=str;
 			Timer.track('cookie amount');
